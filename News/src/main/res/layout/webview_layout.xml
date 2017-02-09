@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?zqzx_setting_main_color"
+    android:layout_marginLeft="@dimen/search_padding_middle"
+    android:layout_marginRight="@dimen/search_padding_middle">
+
+    <com.hzpd.custorm.CustomWebView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none" />
+    <View
+        android:id="@+id/cover_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/add_transparency"
+        android:visibility="gone" />
+</FrameLayout>

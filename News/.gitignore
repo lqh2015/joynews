@@ -1,0 +1,17 @@
+# ignore all files first , then exclude some files later
+/*
+
+# project files
+!/libs
+!/src
+!/proguard-android.txt
+
+# git
+!/.gitignore
+
+# gradle
+!/build.gradle
+!/gradle.properties
+
+# configs
+!/configs

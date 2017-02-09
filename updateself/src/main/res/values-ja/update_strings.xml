@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="update_app_ticket">ダウンロード中</string>
+    <string name="update_downloading">最新バージョンはダウンロード中... %1$s</string>
+    <string name="dialog_button_later">後で</string>
+    <string name="dialog_button_now">今すぐアップロードします</string>
+    <string name="dialog_button_intall">最新バージョンは検索</string>
+</resources>

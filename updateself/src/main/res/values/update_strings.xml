@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="update_downloading">Update downloading...%1$s</string>
+    <string name="update_app_ticket">Update App</string>
+    <string name="dialog_button_later">Later</string>
+    <string name="dialog_button_now">Install</string>
+    <string name="dialog_button_intall">Update</string>
+
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 自动统计Activity -->
+    <bool name="open_activity_duration_track">true</bool>
+    <!-- 友盟统计渠道 Indonesia  GooglePlay -->
+    <string name="umeng_channel_id">Google</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+    <string name="update_app_ticket">应用更新</string>
+    <string name="update_downloading">下载更新...%1$s</string>
+    <string name="dialog_button_later">稍后更新</string>
+    <string name="dialog_button_now">安装</string>
+    <string name="dialog_button_intall">立即更新</string>
+
+</resources>

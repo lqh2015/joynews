@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+
+    <com.hzpd.ui.widget.FontTextView
+        android:id="@+id/zhuanti_tv_column"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="123123"
+        android:textSize="18sp"
+        android:padding="@dimen/margin_10"
+        android:textColor="@color/grey_font"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color"/>
+
+</LinearLayout>

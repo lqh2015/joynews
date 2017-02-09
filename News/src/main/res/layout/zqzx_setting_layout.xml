@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?zqzx_setting_main_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--标题-->
+    <include layout="@layout/stitle_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?zqzx_onclik_setting_item"
+        android:orientation="vertical">
+
+
+        <!--换肤-->
+        <LinearLayout
+            android:id="@+id/zqzx_setting_skin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?zqzx_onclik_setting_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dip"
+            android:visibility="gone">
+
+            <com.hzpd.ui.widget.FontTextView
+                android:id="@+id/setting_skin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="@string/setting_skin"
+                android:textColor="?zqzx_setting_item_text"
+                android:textSize="20sp" />
+
+            <com.hzpd.ui.widget.FontTextView
+                android:id="@+id/setting_chosse_skin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:textColor="?zqzx_setting_item_right_text"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/choose_skin_iv"
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bbs_modle_jt"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <View
+            style="@style/setting_line_layout"
+            android:visibility="gone" />
+
+        <!--字体大小-->
+        <LinearLayout
+            android:id="@+id/zqzx_setting_textsize"
+            style="@style/setting_item_layout"
+            android:visibility="gone">
+
+            <com.hzpd.ui.widget.FontTextView
+                style="@style/setting_text"
+                android:text="@string/settings_font" />
+
+            <com.hzpd.ui.widget.FontTextView
+                android:id="@+id/setting_chosse_textsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/settings_option_font_small"
+                android:textColor="?zqzx_setting_item_right_text"
+                android:textSize="18sp" />
+
+            <ImageView style="@style/setting_img" />
+        </LinearLayout>
+
+        <View
+            style="@style/setting_line_layout"
+            android:visibility="gone" />
+
+        <!--推送设置-->
+        <LinearLayout
+            style="@style/setting_item_layout"
+            android:visibility="gone">
+
+            <com.hzpd.ui.widget.FontTextView
+                style="@style/setting_text"
+                android:text="@string/settings_push" />
+
+            <com.hzpd.custorm.switchbutton.SwitchButton
+                android:id="@+id/sb_use_listener"
+                style="@style/MaterialDesignStyle"
+                android:layout_marginRight="10dp" />
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/setting_line_layout"
+            android:visibility="gone" />
+
+        <!--缓存清理-->
+        <LinearLayout
+            android:id="@+id/zqzx_setting_deletecache"
+            style="@style/setting_item_layout">
+
+            <com.hzpd.ui.widget.FontTextView
+                style="@style/setting_text"
+                android:text="@string/settings_clear_cache" />
+
+            <com.hzpd.ui.widget.FontTextView
+                android:id="@+id/zqzx_setting_cache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:text="10m"
+                android:textColor="?zqzx_setting_item_right_text"
+                android:textSize="18sp" />
+
+            <com.pnikosis.materialishprogress.ProgressWheel
+                android:id="@+id/app_progress_bar"
+                style="@style/MaterialProgressWheelStyle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_toLeftOf="@+id/zqzx_setting_cache"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!--站点设置-->
+        <View style="@style/setting_line_layout" />
+
+        <!--选择国家-->
+        <RelativeLayout
+            android:id="@+id/zqzx_setting_choose_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_item_selector"
+            android:padding="15dip"
+            android:visibility="gone">
+
+            <com.hzpd.ui.widget.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="@string/language"
+                android:textColor="@color/zqzx_font_set_title"
+                android:textSize="20sp" />
+
+
+            <com.hzpd.ui.widget.FontTextView
+                android:id="@+id/setting_choose_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/choose_country_iv"
+                android:text="Indonesia"
+                android:textColor="?zqzx_setting_item_right_text"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/choose_country_iv"
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bbs_modle_jt"
+                android:gravity="center_vertical" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/setting_line_layout"
+            android:visibility="gone" />
+
+        <!--反馈消息-->
+        <LinearLayout
+            android:id="@+id/zqzx_setting_feedback"
+            style="@style/setting_item_layout">
+
+            <com.hzpd.ui.widget.FontTextView
+                style="@style/setting_text"
+                android:text="@string/settings_feedback" />
+
+            <ImageView style="@style/setting_img" />
+        </LinearLayout>
+
+        <View style="@style/setting_line_layout" />
+
+        <!--关于我们-->
+        <RelativeLayout
+            android:id="@+id/zqzx_setting_aboutus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_item_selector"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <com.hzpd.ui.widget.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="center_vertical"
+                android:text="@string/settings_about_us"
+                android:textColor="@color/zqzx_font_set_title"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bbs_modle_jt"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+
+        <View
+            style="@style/setting_line_layout"
+            android:visibility="gone" />
+
+        <!--检查更新-->
+        <LinearLayout
+            android:id="@+id/zqzx_setting_update"
+            style="@style/setting_item_layout">
+
+            <com.hzpd.ui.widget.FontTextView
+                style="@style/setting_text"
+                android:text="@string/settings_check_update" />
+
+            <com.hzpd.ui.widget.FontTextView
+                android:id="@+id/zqzx_setting_tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:gravity="center_vertical"
+                android:text="1.0.0"
+                android:textColor="?zqzx_setting_item_right_text"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View style="@style/setting_line_layout" />
+
+        <!--退出登录-->
+        <LinearLayout
+            android:id="@+id/zqzx_setting_login_out"
+            style="@style/setting_item_layout"
+            android:visibility="gone">
+
+            <com.hzpd.ui.widget.FontTextView
+                style="@style/setting_text"
+                android:text="@string/prompt_logout" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

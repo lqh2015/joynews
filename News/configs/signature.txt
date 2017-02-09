@@ -1,0 +1,11 @@
+﻿#签名文件路径
+storeFile=/configs/worldnews.jks
+
+#签名文件密码
+storePassword=worldnews
+
+#签名的别名
+keyAlias=worldnews
+
+#签名文件密码
+keyPassword=worldnews

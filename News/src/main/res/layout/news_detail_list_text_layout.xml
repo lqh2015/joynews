@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newsitem_ll2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?news_item_btn_selector"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/list_item_padding_tb"
+        android:paddingLeft="@dimen/list_item_padding"
+        android:paddingRight="@dimen/list_item_padding"
+        android:paddingTop="@dimen/list_item_padding_tb">
+
+        <!--标题-->
+        <com.hzpd.ui.widget.FontTextView
+            android:id="@+id/newsitem_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            style="@style/item_title_style"/>
+
+        <include
+            layout="@layout/news_detail_desc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginLeft="@dimen/list_item_padding"
+        android:layout_marginRight="@dimen/list_item_padding"
+        android:background="?news_item_line_color" />
+</LinearLayout>
+

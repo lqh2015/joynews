@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_fbid">863014693810100</string>
+    <string name="facebook_app_name">BERITA TERKINI</string>
+    <string name="jpush_key">fcdda60ec37234ffcf765e48</string>
+    <bool name="isRom">true</bool>
+    <bool name="isShowIcon">true</bool>
+    <bool name="isRomMain">true</bool>
+    <bool name="isJpushShowIcon">false</bool>
+</resources>

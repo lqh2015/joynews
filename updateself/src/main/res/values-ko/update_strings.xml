@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="update_app_ticket">다운로드중....</string>
+    <string name="update_downloading">다운로드... %1$s</string>
+    <string name="dialog_button_later">후</string>
+    <string name="dialog_button_now">지금 설치하기</string>
+    <string name="dialog_button_intall">업데이트 검색</string>
+</resources>

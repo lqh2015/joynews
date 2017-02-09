@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:splitMotionEvents="false">
+
+    <!--登录栏-->
+    <LinearLayout
+        android:id="@+id/zy_rfrag_ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:background="?title_bar_color"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <com.hzpd.custorm.CircleImageView
+            android:id="@+id/zy_rfrag_iv_login"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/news_detail_avatar"
+            app:border_color="@color/white"
+            app:border_width="1dp"
+            app:civ_border_overlay="true" />
+
+        <TextView
+            android:id="@+id/zy_rfrag_tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/prompt_login_now"
+            android:textColor="?left_menu_fb_name"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <!--展示框-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?right_item_layout_bg"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!-- 收藏-->
+                        <LinearLayout
+                            android:id="@+id/zy_rfrag_ll_collect"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?zqzx_onclik_setting_item"
+                            android:padding="@dimen/zy_right_margin_left">
+
+                            <ImageView
+                                android:id="@+id/slidemeun_collection_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/personal_icon_collection" />
+
+                            <com.hzpd.ui.widget.FontTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:paddingLeft="@dimen/zy_right_margin_left"
+                                android:text="@string/prompt_collect"
+                                android:textColor="?zqzx_setting_item_text"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/right_guide" />
+                        </LinearLayout>
+
+                        <View style="@style/line_layout" />
+
+                        <!--评论-->
+                        <LinearLayout
+                            android:id="@+id/zy_rfrag_ll_comm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?zqzx_onclik_setting_item"
+                            android:padding="@dimen/zy_right_margin_left"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/slidemeun_conmment_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/personal_icon_message" />
+
+                            <com.hzpd.ui.widget.FontTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:paddingLeft="@dimen/zy_right_margin_left"
+                                android:text="@string/comment_mine"
+                                android:textColor="?zqzx_setting_item_text"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/right_guide" />
+                        </LinearLayout>
+
+                        <View
+                            style="@style/line_layout"
+                            android:visibility="gone" />
+
+                        <!--推送-->
+                        <LinearLayout
+                            android:id="@+id/zy_rfrag_ll_push"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?zqzx_onclik_setting_item"
+                            android:padding="@dimen/zy_right_margin_left">
+
+                            <ImageView
+                                android:id="@+id/slidemeun_push_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/personal_icon_push" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:paddingLeft="@dimen/zy_right_margin_left"
+                                android:text="@string/prompt_my_msg"
+                                android:textColor="?zqzx_setting_item_text"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/right_guide" />
+                        </LinearLayout>
+
+                        <View style="@style/line_layout" />
+
+                        <!--最近阅读-->
+                        <LinearLayout
+                            android:id="@+id/zy_rfrag_ll_read"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?zqzx_onclik_setting_item"
+                            android:padding="@dimen/zy_right_margin_left">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/personal_icon_history" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:paddingLeft="@dimen/zy_right_margin_left"
+                                android:text="@string/recently_read"
+                                android:textColor="?zqzx_setting_item_text"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/right_guide" />
+                        </LinearLayout>
+
+                        <View style="@style/line_layout" />
+
+                        <!--评论-->
+                        <LinearLayout
+                            android:id="@+id/zy_rfrag_ll_rate_us"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?zqzx_onclik_setting_item"
+                            android:padding="@dimen/zy_right_margin_left"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/personal_icon_rate_us" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:paddingLeft="@dimen/zy_right_margin_left"
+                                android:text="@string/rate_us"
+                                android:textColor="?zqzx_setting_item_text"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/right_guide" />
+                        </LinearLayout>
+
+                        <View style="@style/line_layout" />
+
+                        <!--应用推荐-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="@dimen/zy_right_margin_left"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/personal_icon_app" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:paddingLeft="@dimen/zy_right_margin_left"
+                                android:text="应用推荐"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <!--离线下载-->
+                <LinearLayout
+                    android:id="@+id/zy_rfrag_ll_download"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?zqzx_onclik_setting_item"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/personal_icon_offline" />
+
+                    <TextView
+                        android:id="@+id/choose_country"
+                        style="@style/personal_item_text"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="?zqzx_setting_item_text" />
+                </LinearLayout>
+
+                <!--模式-->
+                <LinearLayout
+                    android:id="@+id/zy_page_mode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?zqzx_onclik_setting_item"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/image_save_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/personal_icon_save" />
+
+                    <TextView
+                        android:id="@+id/page_mode"
+                        style="@style/personal_item_text"
+                        android:maxLines="1"
+                        android:text="@string/page_save_mode"
+                        android:textColor="?zqzx_setting_item_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/zy_rfrag_ll_night"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?zqzx_onclik_setting_item"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/image_skin_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/personal_icon_night" />
+
+                    <TextView
+                        android:id="@+id/night_mode"
+                        style="@style/personal_item_text"
+                        android:maxLines="1"
+                        android:text="@string/night_mode"
+                        android:textColor="?zqzx_setting_item_text" />
+                </LinearLayout>
+                <!--反馈-->
+                <LinearLayout
+                    android:id="@+id/zy_rfrag_ll_feedback"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?zqzx_onclik_setting_item"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/personal_icon_feedback" />
+
+                    <TextView
+                        style="@style/personal_item_text"
+                        android:maxLines="1"
+                        android:text="@string/settings_feedback"
+                        android:textColor="?zqzx_setting_item_text" />
+                </LinearLayout>
+                <!--设置-->
+                <LinearLayout
+                    android:id="@+id/zy_rfrag_ll_setting"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?zqzx_onclik_setting_item"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/slidemeun_setting_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/personal_icon_setting" />
+
+                    <TextView
+                        style="@style/personal_item_text"
+                        android:text="@string/title_settings"
+                        android:textColor="?zqzx_setting_item_text" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/cover_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/add_transparency"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

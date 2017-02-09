@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.hzpd.ui.widget.FontTextView
+        android:id="@+id/search_none_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffebebeb">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_serch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?fragment_search_background_color"/>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hzpd.hflt"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <!-- ROM版本需要静默安装权限 -->
+    <uses-permission
+        android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 极光推送必须的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!--  -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.hzpd.ui.App"
+        android:allowBackup="true"
+        android:configChanges="keyboardHidden|orientation"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/ThemeDefault"
+        android:windowSoftInputMode="stateHidden|adjustResize">
+
+        <activity
+            android:name="com.hzpd.ui.activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppStartLoad">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.hzpd.ui.activity.MainActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"></activity>
+        <activity
+            android:name="com.hzpd.ui.activity.WebActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hzpd.ui.activity.NewsDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hzpd.ui.activity.RecentlyReadActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hzpd.ui.activity.MyPushActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hzpd.ui.activity.TagActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hzpd.ui.activity.XF_NewsCommentsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hzpd.ui.activity.NewsAlbumActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="album"
+                    android:scheme="hflt" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.hzpd.ui.activity.SearchActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hzpd.ui.activity.XF_PInfoActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.hzpd.ui.activity.ZQ_ReplyCommentActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+        <activity
+            android:name="com.hzpd.ui.activity.VideoPlayerActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="video"
+                    android:scheme="hflt" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.hzpd.services.InitService"
+            android:exported="false"></service>
+
+    <service android:name="com.hzpd.services.ClearCacheService"></service>
+    <!-- service -->
+
+        <activity
+            android:name="com.hzpd.ui.activity.MyEditColumnActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hzpd.ui.activity.MyPMColAvtivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hzpd.ui.activity.ZhuanTiActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hzpd.ui.activity.SettingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hzpd.ui.activity.MyCommentsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hzpd.ui.activity.ZQ_FeedBackActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hzpd.ui.activity.ZQ_ReplyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+
+        <receiver android:name="com.news.update.NetReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.tl.news.UPDATE" />
+                <action android:name="android.apk.install.times" />
+                <action android:name="com.tl.news.JPUSH" />
+                <action android:name="com.lmt.alarm.SafeTime" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
+

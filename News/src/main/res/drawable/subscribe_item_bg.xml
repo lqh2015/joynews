@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <!--移动到其他位置底色颜色变化-->
+                    <stroke android:width="1.0dip" android:color="@color/subscribe_item_drag_stroke" android:dashGap="2.0dip" android:dashWidth="4.0dip" />
+                    <solid android:color="@color/subscribe_item_drag_bg" />
+                    <corners android:radius="55dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_selected="true">
+        <shape>
+            <!--长按颜色变化-->
+            <stroke android:width="1.0dip" android:color="@color/subscribe_item_selected_stroke" />
+            <solid android:color="@color/white" />
+            <corners android:radius="55dp" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <!-- 默认不能点击效果-->
+            <stroke android:width="0.5dip" android:color="@color/subscribe_item_disabled_stroke" />
+            <solid android:color="#eeeeee" />
+            <corners android:radius="55dp" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <!-- 点击效果-->
+            <stroke android:width="0.5dip" android:color="@color/pager_sliding_tab_text_selected_color" />
+            <solid android:color="@color/white" /><!--拖动颜色-->
+            <corners android:radius="55dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <!--默认效果-->
+            <stroke android:width="0.5dip" android:color="#e0e0e0" />
+            <solid android:color="@color/white" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+</selector>

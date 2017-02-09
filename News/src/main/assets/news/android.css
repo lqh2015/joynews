@@ -1,0 +1,35 @@
+@charset "utf-8";
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #212121;
+    background: #ffffff;
+    font-size: 100%;
+}
+
+body {
+    padding-top:10px;
+    font-family: 'sans-serif';
+    line-height: 150%;
+    overflow-x: hidden;
+}
+
+div, p, table, h1, h2, h3, h4, h5,img {
+    display: block;
+    max-width:100%;
+}
+
+img {
+    margin:3px auto;
+    background: #efefef;
+    max-width:100%;
+}
+
+/*基本链接样式*/
+a {
+    color: #5aadf0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}

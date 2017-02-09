@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:padding="3dp"
+        android:id="@+id/rate_one"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/feedstar_hollow" />
+
+    <ImageView
+        android:padding="3dp"
+        android:id="@+id/rate_two"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/feedstar_hollow" />
+
+    <ImageView
+        android:padding="3dp"
+        android:id="@+id/rate_three"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/feedstar_hollow" />
+
+    <ImageView
+        android:padding="3dp"
+        android:id="@+id/rate_four"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/feedstar_hollow" />
+
+    <ImageView
+        android:padding="3dp"
+        android:id="@+id/rate_five"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/feedstar_hollow" />
+</LinearLayout>

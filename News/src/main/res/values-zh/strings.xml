@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tips">提示</string>
+    <string name="setting">设置</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="install">安装</string>
+    <string name="reject">狠心拒绝</string>
+    <string name="bye">土豪勿扰</string>
+    <string name="change">现在切换</string>
+    <string name="rate">去评价</string>
+    <string name="tip_offline">当前没有网络，无法浏览新闻，是否开启网络？</string>
+    <string name="tip_mobile">您已切换到移动网络, 建议切换到省流量模式(不下载图片)? </string>
+    <string name="tip_rate">感谢您的使用! 如果喜欢我们, 请给我们五星评价。</string>
+
+    <string name="install_ok">Berkin 安装成功！</string>
+
+    <string name="switch_save_flow">已切换到省流量模式</string>
+    <string name="switch_normal">已切换到高清模式</string>
+    <!--当前是WIFI网络，不消耗流量，已自动切换到Standar Mode-->
+    <string name="switch_wifi">当前是WIFI网络，不消耗流量。自动切换到高清模式 </string>
+
+    <string name="install_tips">喜欢吗？直接安装吧！ </string>
+
+    <string name="error_delete">新闻已删除</string>
+    <string name="page_save_mode">省流量模式</string>
+    <string name="page_best_mode">高清模式</string>
+
+    <!-- 翻译 -->
+    <!-- 本地更新 -->
+    <string name="update_counts_head">已更新</string>
+    <string name="local_update_now">有更新</string>
+    <string name="local_update_later">待会儿</string>
+    <string name="local_update_install">马上更新</string>
+    <string name="local_downloading_ticker">应用更新链接</string>
+    <string name="local_downloading">正在更新 %1$s </string>
+
+    <string name="local_update_ticker">更新背景</string>
+    <string name="local_update_done_ticker">更新成功</string>
+    <string name="app_notify_title">Berkin - Berita Terkini</string>
+    <string name="app_notify_content">聚集了所有国内最全以及最有信誉的新闻内容。Berkin，为您量身定做阅读平台！</string>
+    <string name="recommend">推荐</string>
+    <string name="comment_ok">评论成功</string>
+    <string name="search_none">"抱歉，我找不到“%1$s” yet"</string>
+    <string name="language">语言</string>
+    <!-- 搜索页面 -->
+    <string name="search_empty_content">找新闻</string>
+    <string name="search_key_head">找热门</string>
+    <string name="search_history_head">找阅读历史</string>
+    <string name="search_history_clear">删除阅读历史</string>
+    <!--
+		"     (&#34; 或 &quot;)
+		'     (&#39; 或 &apos;)
+		&     (&#38; 或 &amp;)
+		lt(<) (&#60; 或 &lt;)
+		gt(>) (&#62; 或 &gt;)
+
+    -->
+    <string name="app_name">Berkin</string>
+
+    <string name="video_layout_loading">缓存中</string>
+
+    <string name="folder_all">所有图片</string>
+    <string name="preview">预览</string>
+    <string name="msg_no_camera">没有相机</string>
+    <string name="msg_amount_limit">已达最高极限</string>
+
+    <string name="about_us">    </string>
+    <string name="settings_font">字体</string>
+    <string name="settings_option_font_large">大</string>
+    <string name="settings_option_font_medium">中</string>
+    <string name="settings_option_font_small">小</string>
+    <string name="settings_push">推送</string>
+    <string name="settings_clear_cache">清除缓存</string>
+    <string name="settings_check_update">检查更新</string>
+    <string name="settings_feedback">反馈</string>
+    <string name="settings_about_us">关于我们</string>
+    <string name="title_more_column">增加频道</string>
+
+    <string name="title_user_register">注册</string>
+    <string name="title_activity_personal_award">个人信息</string>
+    <string name="title_activity_vote_detail">投票详情</string>
+    <string name="title_activity_register">注册动态</string>
+    <string name="title_activity_vote">投票动态</string>
+    <string name="title_activity_award">奖赏动态</string>
+    <string name="title_activity_detail">动态详情</string>
+    <string name="title_settings">设置</string>
+    <string name="title_login">登录</string>
+    <string name="title_about_us">>关于我们</string>
+    <string name="login">登录</string>
+
+
+    <string name="prompt_votes">%1$d 投票</string>
+    <string name="prompt_column_subscribe">订阅</string>
+    <string name="prompt_my_msg">信息</string>
+    <string name="prompt_clear_cache_dialog_title">清除缓存标题</string>
+    <string name="prompt_clear_cache_dialog_msg">清除缓存信息 </string>
+    <string name="prompt_subject">专题</string>
+    <string name="prompt_feedback">反馈</string>
+    <string name="prompt_start_lottery">抽奖</string>
+    <string name="prompt_seconds">%1$d 秒</string>
+    <string name="prompt_get_again">恢复原状</string>
+    <string name="prompt_find_password">找回密码</string>
+    <string name="prompt_change_password">更改密码</string>
+
+
+    <string name="prompt_take_photo">获取图片</string>
+    <string name="prompt_male">男</string>
+    <string name="prompt_female">女</string>
+    <string name="prompt_keep_secret">保密</string>
+    <string name="prompt_yesterday">昨天</string>
+    <string name="prompt_today">今天</string>
+
+    <string name="prompt_accept_award">接收奖品</string>
+    <string name="prompt_real_name">真实姓名</string>
+    <string name="prompt_phone_number">电话号码</string>
+    <string name="prompt_submit">提交</string>
+    <string name="prompt_apply">申请</string>
+    <string name="prompt_apply_on_cover">设置到首页</string>
+    <string name="prompt_vote">投票</string>
+    <string name="prompt_lottery">抽奖</string>
+    <string name="prompt_share">分享</string>
+    <string name="prompt_auditing">检验</string>
+    <string name="prompt_click_to_add_or_cancel">点击添加或取消</string>
+    <string name="prompt_get_captcha">获取验证码</string>
+    <string name="prompt_verify_captcha">确认验证码</string>
+    <string name="prompt_register_with_space">申请</string>
+    <string name="prompt_write_comment">写评论</string>
+    <string name="prompt_image">图片</string>
+    <string name="prompt_all_images">所有图片</string>
+    <string name="prompt_image_plural">%1$d 图片</string>
+    <string name="prompt_preview">预览(1)</string>
+    <string name="prompt_complete">完成</string>
+    <string name="prompt_complete_with_number">完成(%1$d/%2$d)</string>
+    <string name="prompt_forget_password">忘记密码</string>
+    <string name="prompt_has_no_account">没有账号？</string>
+    <string name="prompt_register">注册</string>
+    <string name="prompt_nickname">昵称：</string>
+    <string name="prompt_sex">性别：</string>
+    <string name="prompt_i_has_comment">已评论</string>
+    <string name="prompt_logout">登出</string>
+    <string name="prompt_vote_rule">投票规则</string>
+
+    <string name="prompt_send">发送</string>
+    <string name="prompt_login_now">马上登录</string>
+    <string name="prompt_login_facebook">Facebook登录</string>
+    <string name="prompt_collect">收藏</string>
+    <string name="hint_input_new_nickname">输入新昵称</string>
+    <string name="hint_input_phone">输入机型</string>
+    <string name="hint_msm_captcha">输入验证码</string>
+    <string name="hint_phone_number">手机或电话</string>
+    <string name="hint_sex">男或女</string>
+    <string name="hint_date">如：2014-12-16</string>
+    <string name="hint_award_send_address">地址</string>
+    <string name="hint_please_input_password">输入密码</string>
+    <string name="hint_please_input_password_again">再次输入密码</string>
+    <string name="hint_input_new_password">输入新密码</string>
+    <string name="hint_confirm_password">验证新密码</string>
+    <string name="hint_password">密码</string>
+    <string name="hint_feedback_at_content">为了Berkin的未来，请留下您宝贵的意见</string>
+    <string name="hint_feedback_at_email">填写您的邮件地址</string>
+    <string name="pull_to_refresh_reached_end">已显示最新内容</string>
+    <string name="comment_mine">我的评论</string>
+    <string name="comment">评论</string>
+    <string name="toast_server_error">服务器出错</string>
+    <string name="toast_server_no_response">服务器没有反应</string>
+    <string name="toast_cannot_connect_to_server">无法连接服务器</string>
+    <string name="toast_cannot_connect_network">无法连接网络</string>
+    <string name="toast_check_network">请检查手机网络</string>
+    <string name="toast_collect_success">获取成功</string>
+    <string name="toast_collect_failed">获取失败</string>
+    <string name="toast_collect_cancelled">取消获取</string>
+    <string name="toast_delete_success">删除成功</string>
+    <string name="toast_delete_failed">删除失败</string>
+    <string name="toast_no_sdcard">无记忆卡</string>
+    <string name="toast_image_format_is_wrong">图片格式错误</string>
+    <string name="toast_phone_format_is_wrong">电话号码错误</string>
+    <string name="toast_email_format_is_wrong">邮件地址错误</string>
+    <string name="toast_date_format_is_wrong">日期错误\n 正确格式为yyyy-mm-dd</string>
+    <string name="toast_qq_format_is_wrong">QQ格式错误</string>
+    <string name="toast_start_download">开始下载</string>
+    <string name="toast_downloaded_at">下载至</string>
+    <string name="toast_download_failed">下载失败</string>
+    <string name="toast_bind_success">绑定成功</string>
+    <string name="toast_bind_failed">绑定失败</string>
+    <string name="toast_cache_failed">缓存失败</string>
+    <string name="toast_xx_cannot_be_empty">%1$s不能空白哦</string>
+    <string name="toast_feedback_cannot_be_short">字符不能太少哦</string>
+    <string name="toast_email_cannot_be_error">邮件地址出错</string>
+    <string name="toast_input_cannot_be_empty">必须填写内容</string>
+    <string name="toast_fail_to_comment">评论失败</string>
+    <string name="toast_activity_not_started">没有任何动态</string>
+    <string name="toast_take_award">恭喜您得到%1$s\n 请换取</string>
+    <string name="toast_no_award">再接再厉！</string>
+    <string name="toast_award">奖品：%1$s</string>
+    <string name="toast_apply_success">注册成功</string>
+    <string name="toast_input_number">输入号码</string>
+    <string name="toast_no_data_now">没有记录</string>
+    <string name="toast_captcha_is_wrong">验证码错误</string>
+    <string name="toast_captcha_get_success">验证码获取成功</string>
+    <string name="toast_captcha_get_failed">验证码获取失败</string>
+    <string name="toast_input_phone">输入手机号码</string>
+    <string name="toast_phone_number_count_error">手机号出错</string>
+    <string name="toast_verify_success">验证成功</string>
+    <string name="toast_app_not_installed">应用为安装</string>
+    <string name="toast_press_again_to_exit">再次点击退出</string>
+    <string name="calendarutil_time_1">最新</string>
+    <string name="calendarutil_time_2">分钟前</string>
+    <string name="calendarutil_time_3">小时前</string>
+    <string name="calendarutil_time_4">1昨天</string>
+    <string name="calendarutil_time_5">2天前</string>
+    <string name="calendarutil_time_6">天前</string>
+    <string name="details_lv_1">(所有内容来自第三方新闻获取，其言论与看法并不代表Berkin立场，若出现有关版权问题， &#160;</string>
+    <string name="details_lv_link">请尽快联系我们。</string>
+    <string name="details_lv_2">相关新闻</string>
+    <string name="news_detail_related_tag">相关标签</string>
+    <string name="details_lv_3">相关评论</string>
+    <string name="details_lv_4">查看原文</string>
+    <string name="details_lv_5">查看其它频道</string>
+    <string name="sgin_time">从哪儿注册？</string>
+    <string name="load_more_loading">正在缓存</string>
+    <string name="reply_share">在Facebook上分享</string>
+    <string name="reply_comment">回复评论</string>
+    <string name="edit_my_colum">我的频道</string>
+    <string name="edit_other_colum">增加频道</string>
+    <string name="update_no_version">目前最新版本</string>
+    <string name="feed_ok">反馈成功</string>
+    <string name="feed_fail">反馈失败</string>
+    <string name="editcolumn_edit">编辑</string>
+    <string name="editcolumn_ok">成功</string>
+    <string name="update_counts">最新内容 %1$d 文章</string>
+    <string name="click_here_to_refresh">网络有问题！</string>
+    <!--发现%1$d条更新-->
+    <string name="delete">删除</string>
+    <string name="setting_skin">背景颜色</string>
+    <!-- main menu -->
+    <string name="main_menu0_text">主页</string>
+    <string name="main_menu1_text">探索</string>
+    <string name="main_menu2_text">我</string>
+    <string name="search">查找&#8230;</string>
+    <string name="recently_read">最后阅读</string>
+    <!--搜索关键词-->
+    <string name="search_keyword">输入您喜欢的频道</string>
+    <string name="search_tips">输入关键词</string>
+    <string name="discovery_name">探索</string>
+    <string name="classify_name">频道</string>
+    <string name="discovery_follow">订阅</string>
+    <string name="discovery_followed">选项</string>
+    <string name="follow_num"> 人订阅</string>
+    <string name="night_mode">夜间模式</string>
+    <string name="day_mode">正常模式</string>
+    <string name="look_over">预览</string>
+    <string name="default_county">印尼</string>
+    <string name="welcome_to_comment">写下您的意见</string>
+    <string name="tag_followed">选择成功，新闻将在首页出现</string>
+    <string name="rate_us">给Berkin评分</string>
+    <string name="click_refresh_btn_tv">重新下载</string>
+    <string name="begin_now">马上开始</string>
+    <string name="link_facebook">Berkin将给你全新的阅读体验。</string>
+
+    <string name="select_country">选择国家或地区</string>
+
+    <string name="gcm_defaultSenderId">388926632168</string>
+    <string name="new_version_title">发现新版本%1$s</string>
+    <string name="upgrade_title">点火升级</string>
+    <string name="default_type">eyJkYXRhIjpbeyJ0aWQiOiIxMzAiLCJzb3J0X29yZGVyIjoiNSIsImNubmFtZSI6IkJlcml0YSBVdGFtYSIsImRlZmF1bHRfc2hvdyI6IjEifSx7InRpZCI6IjE1MCIsInNvcnRfb3JkZXIiOiIxMCIsImNubmFtZSI6IlNlbGVicml0aSIsImRlZmF1bHRfc2hvdyI6IjEifSx7InRpZCI6IjEyOCIsInNvcnRfb3JkZXIiOiIxNSIsImNubmFtZSI6IkJvbGEiLCJkZWZhdWx0X3Nob3ciOiIxIn0seyJ0aWQiOiIxMTkiLCJzb3J0X29yZGVyIjoiMjAiLCJjbm5hbWUiOiJFa29ub21pIiwiZGVmYXVsdF9zaG93IjoiMCJ9LHsidGlkIjoiMTI5Iiwic29ydF9vcmRlciI6IjI1IiwiY25uYW1lIjoiT3RvbW90aWYiLCJkZWZhdWx0X3Nob3ciOiIwIn0seyJ0aWQiOiIxMjEiLCJzb3J0X29yZGVyIjoiMzAiLCJjbm5hbWUiOiJUZWtub2xvZ2kiLCJkZWZhdWx0X3Nob3ciOiIxIn0seyJ0aWQiOiIxNTIiLCJzb3J0X29yZGVyIjoiMzUiLCJjbm5hbWUiOiJTZXJiYS1TZXJiaSIsImRlZmF1bHRfc2hvdyI6IjEifSx7InRpZCI6IjEyMyIsInNvcnRfb3JkZXIiOiI0MCIsImNubmFtZSI6IkludGVybmFzaW9uYWwiLCJkZWZhdWx0X3Nob3ciOiIwIn0seyJ0aWQiOiIxMzciLCJzb3J0X29yZGVyIjoiNDUiLCJjbm5hbWUiOiJQYXJpd2lzYXRhIiwiZGVmYXVsdF9zaG93IjoiMCJ9LHsidGlkIjoiMTIyIiwic29ydF9vcmRlciI6IjUwIiwiY25uYW1lIjoiS2VzZWhhdGFuIiwiZGVmYXVsdF9zaG93IjoiMSJ9LHsidGlkIjoiMTM5Iiwic29ydF9vcmRlciI6IjU1IiwiY25uYW1lIjoiR2F5YSAmIEtlY2FudGlrYW4iLCJkZWZhdWx0X3Nob3ciOiIxIn0seyJ0aWQiOiIxMjQiLCJzb3J0X29yZGVyIjoiNjAiLCJjbm5hbWUiOiJOYXNpb25hbCIsImRlZmF1bHRfc2hvdyI6IjEifSx7InRpZCI6IjEyNiIsInNvcnRfb3JkZXIiOiI2NSIsImNubmFtZSI6IkVkdWthc2kiLCJkZWZhdWx0X3Nob3ciOiIwIn0seyJ0aWQiOiIxMzgiLCJzb3J0X29yZGVyIjoiNzAiLCJjbm5hbWUiOiJLdWxpbmVyIiwiZGVmYXVsdF9zaG93IjoiMSJ9LHsidGlkIjoiMTQxIiwic29ydF9vcmRlciI6Ijc1IiwiY25uYW1lIjoiRmlsbSIsImRlZmF1bHRfc2hvdyI6IjAifSx7InRpZCI6IjE0MiIsInNvcnRfb3JkZXIiOiI4MCIsImNubmFtZSI6Ik11c2lrIiwiZGVmYXVsdF9zaG93IjoiMCJ9LHsidGlkIjoiMTQ1Iiwic29ydF9vcmRlciI6Ijg1IiwiY25uYW1lIjoiTWV0cm9wb2xpdGFuIiwiZGVmYXVsdF9zaG93IjoiMCJ9LHsidGlkIjoiMTIwIiwic29ydF9vcmRlciI6Ijg3IiwiY25uYW1lIjoiT2xhaHJhZ2EiLCJkZWZhdWx0X3Nob3ciOiIxIn0seyJ0aWQiOiIxMzYiLCJzb3J0X29yZGVyIjoiOTAiLCJjbm5hbWUiOiJSZWdpb25hbCIsImRlZmF1bHRfc2hvdyI6IjAifSx7InRpZCI6IjE0NyIsInNvcnRfb3JkZXIiOiI5MiIsImNubmFtZSI6IklidSAmIEFuYWsiLCJkZWZhdWx0X3Nob3ciOiIwIn0seyJ0aWQiOiIxNDMiLCJzb3J0X29yZGVyIjoiOTMiLCJjbm5hbWUiOiJQc2lrb2xvZ2kiLCJkZWZhdWx0X3Nob3ciOiIwIn0seyJ0aWQiOiIxNDAiLCJzb3J0X29yZGVyIjoiOTQiLCJjbm5hbWUiOiJCdWRheWEgJiBTZWphcmFoIiwiZGVmYXVsdF9zaG93IjoiMCJ9LHsidGlkIjoiMTM1Iiwic29ydF9vcmRlciI6Ijk2IiwiY25uYW1lIjoiUHJvcGVydGkiLCJkZWZhdWx0X3Nob3ciOiIwIn0seyJ0aWQiOiIxNDQiLCJzb3J0X29yZGVyIjoiOTgiLCJjbm5hbWUiOiJUaXBzICYgVHJpayIsImRlZmF1bHRfc2hvdyI6IjAifSx7InRpZCI6IjE1OCIsInNvcnRfb3JkZXIiOiIxMDAiLCJjbm5hbWUiOiJPcGluaSIsImRlZmF1bHRfc2hvdyI6IjAifSx7InRpZCI6IjE1NyIsInNvcnRfb3JkZXIiOiIxMDUiLCJjbm5hbWUiOiJNYW5nQW5pbWUgR2FtZSIsImRlZmF1bHRfc2hvdyI6IjAifSx7InRpZCI6IjE1OSIsInNvcnRfb3JkZXIiOiIxMjMiLCJjbm5hbWUiOiJTZWtzIiwiZGVmYXVsdF9zaG93IjoiMCJ9XSwiZWNob3N0ciI6bnVsbCwibXNnIjoib2siLCJjb2RlIjoyMDB9</string>
+</resources>

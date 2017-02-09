@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="update_app_ticket">uการติดตั้งการปรับปรุง</string>
+    <string name="update_downloading">ดาวน์โหลดการปรับปรุง... %1$s</string>
+    <string name="dialog_button_later">ต่อมา</string>
+    <string name="dialog_button_now">ติดตั้งตอนนี้</string>
+    <string name="dialog_button_intall">ปรับปรุง</string>
+</resources>

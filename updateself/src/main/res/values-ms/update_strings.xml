@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="update_app_ticket">APPLIKASI PAUTAN TERKINI</string>
+    <string name="update_downloading">MUAT TURUN TERKINI %1$s</string>
+    <string name="dialog_button_later">KEMUDIAN</string>
+    <string name="dialog_button_now">PASANG SEKARANG</string>
+    <string name="dialog_button_intall">SEHINGGA KINI</string>
+</resources>
+

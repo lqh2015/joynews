@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?fragment_main_backgroup">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/zqzx_bg_normal"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="?news_item_line_color" />
+
+        <android.support.v4.widget.CustomSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipe_refresh_widget"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/discovery_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="?fragment_main_backgroup"
+                android:scrollbars="none" />
+        </android.support.v4.widget.CustomSwipeRefreshLayout>
+    </LinearLayout>
+
+    <!--数据为空时显示-->
+    <include layout="@layout/data_empty_layout" />
+    <!-- 为空时点击屏幕加载Loading-->
+    <FrameLayout
+        android:id="@+id/app_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:background="?app_progress_bar_bg"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="@style/JoyNews.Widget.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+
+</FrameLayout>

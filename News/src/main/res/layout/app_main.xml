@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.hzpd.custorm.MyViewPager
+            android:id="@+id/main_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:id="@+id/tab_menu_line"
+            style="@style/line_v" />
+
+        <LinearLayout
+            android:id="@+id/lv_tab_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?zqzx_setting_main_color"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <TextView
+                android:id="@+id/tv_tab_menu0"
+                style="@style/main_tab_item2"
+                android:drawableTop="@drawable/tabmenu_recommend"
+                android:text="@string/main_menu0_text" />
+
+            <TextView
+                android:id="@+id/tv_tab_menu1"
+                style="@style/main_tab_item2"
+                android:drawableTop="@drawable/tabmenu_rank"
+                android:text="@string/main_menu1_text" />
+
+            <TextView
+                android:id="@+id/tv_tab_menu2"
+                style="@style/main_tab_item2"
+                android:drawableTop="@drawable/tabmenu_my"
+                android:gravity="center"
+                android:text="@string/main_menu2_text" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

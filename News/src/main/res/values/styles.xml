@@ -1,0 +1,530 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <item name="windowActionBar">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="ThemeDefault" parent="AppTheme">
+        <item name="title_bar_color">@color/main_title</item>
+        <item name="title_bar_name_color">@color/white</item>
+        <item name="main_line_color">@color/main_line</item>
+        <item name="m_background_tab_pressed">@drawable/title_bar_details_btn_selector_color</item>
+        <item name="main_activity_color">@color/white</item>
+        <item name="fragment_main_backgroup">@color/fragment_background</item>
+        <item name="edit_column_main_backgroup">@color/tabs_item_text</item>
+        <item name="item_title">@color/item_title_color</item>
+        <item name="news_detail_item_title">@color/news_detail_item_title</item>
+        <item name="item_title_read">@color/grey_font</item>
+        <item name="item_tag">@color/item_tag</item>
+        <item name="news_detail_item_tag">@color/details_hot_comment_time</item>
+        <item name="news_item_btn_selector">@drawable/news_item_selector</item>
+        <item name="news_item_line_color">@color/subscribe_item_drag_bg</item>
+        <item name="choose_fragment_bg">@color/fragment_background</item>
+        <item name="right_item_layout_bg">@color/zqzx_font_light</item>
+        <item name="left_menu_fb_name">@color/white</item>
+        <item name="left_menu_item_name">@color/white</item>
+        <item name="left_menu_version_name">@color/white</item>
+        <item name="left_menu_version_line">@color/white</item>
+        <item name="fragment_main_psts_tabs_background">@color/tabs_item_text</item>
+        <item name="fragment_main_psts_tabs_indicator_color">@color/tabs_indicator_color</item>
+        <item name="fragment_main_psts_tabs_text_color">@color/news_detail_item_title</item>
+        <item name="fragment_choose_card_backgroup_color">@color/white</item>
+        <item name="fragment_news_item_falsh">@color/white</item>
+        <item name="newsdetail_share_drawable">@drawable/details_share_selector</item>
+        <item name="button_comment_style_drawable">@drawable/button_comment_style</item>
+        <item name="zqzx_setting_main_color">@color/grey_color</item>
+        <item name="zqzx_ad_color">@color/white</item>
+        <item name="zqzx_onclik_setting_item">@drawable/setting_item_selector</item>
+        <item name="setting_item_selector_color">@color/zqzx_font_light</item>
+        <item name="zqzx_setting_item_text">@color/zqzx_font_set_title</item>
+        <item name="zqzx_setting_item_right_text">@color/zqzx_font_set_normal</item>
+        <item name="zqzx_setting_line_color">@color/main_background_color</item>
+        <item name="zq_feedback_color">@color/white</item>
+        <item name="zq_feedback_edit_color">@color/zqzx_font_normal</item>
+        <item name="zq_feedback_btn_color">@color/white</item>
+        <item name="zq_feedback_btn_submit">@drawable/zq_feedback_btn_selector</item>
+        <item name="zq_feedetbg_shape_bg">@drawable/zq_feedetbg_shape</item>
+        <item name="fragment_search_background_color">@color/white</item>
+        <item name="search_content_background_color">@color/search_content_background</item>
+        <item name="search_key_head_text_color">@color/search_key_head_text</item>
+        <item name="search_history_item_color">@color/white</item>
+        <item name="my_comment_top_nickname">@color/white</item>
+        <item name="my_comment_top_regtime">@color/my_comment_top_regtime</item>
+        <item name="my_comment_news_title">@color/item_title</item>
+        <item name="my_comment_nickname">@color/item_title</item>
+        <item name="my_comment_time">@color/main_tag</item>
+        <item name="my_comment_news_selector">@drawable/my_comment_news_selector</item>
+        <item name="news_detail_rel_item_title">@color/black</item>
+        <item name="discover_fragment_title">@color/tabs_item_text</item>
+        <item name="discover_fragment_item_title">@color/white</item>
+        <item name="classify_item_top">#D1ECFF</item>
+        <item name="discover_fragment_recyclerview_color">@color/white</item>
+        <item name="discover_item_spacing_color">@color/main_background_color</item>
+        <item name="discover_item_line_color">@color/discover_item_line</item>
+        <item name="news_detail_related_line_color">@color/discover_item_line</item>
+        <item name="classify_item_first_bg_color">@color/white</item>
+        <item name="tag_subscribe_bg">@drawable/discovery_item_corners_bg</item>
+        <item name="detail_related_news_layout_bg">@color/white</item>
+        <item name="details_news_source_selector_bg">@drawable/details_news_source_selector</item>
+        <item name="details_news_praise_bg">@drawable/news_details_praise</item>
+        <item name="detail_related_news_bg">@color/white</item>
+        <item name="detail_related_news_head_bg">@color/white</item>
+        <item name="details_news_comments">@color/white</item>
+        <item name="detail_recy_backgroup">@color/white</item>
+        <item name="main_search_bg">@drawable/main_search_corners_bg</item>
+        <item name="search_head_layout_bg">@color/zqzx_font_light</item>
+        <item name="search_history_layout_bg">@color/white</item>
+        <item name="editcolumn_line_bg">@color/fragment_background</item>
+        <item name="subscribe_text_bg">@drawable/subscribe_item_bg</item>
+        <item name="main_edit_bg">@drawable/edit_column_corners_bg</item>
+        <item name="subscribe_textcolor">@color/subscribe_item_text_color</item>
+        <item name="editcolumn_tv_color">@color/grey22</item>
+        <item name="list_loading_color">@color/item_title</item>
+        <item name="rob_sofa_tv_color">@color/rob_sofa_tv_color</item>
+        <item name="search_head_tv_color">@color/item_title</item>
+        <item name="search_key_tv_color">@color/item_title</item>
+        <item name="app_progress_bar_bg">@color/white</item>
+        <item name="comment_list_layout_bg">@color/white</item>
+        <item name="comment_text_color">@color/news_detail_item_title</item>
+        <item name="choose_fragment_line">@color/fragment_background</item>
+        <item name="news_detail_large_line_color">@color/fragment_background</item>
+        <item name="news_detail_line_color">@color/discover_item_line</item>
+        <item name="news_detail_comment_bg">@drawable/corners_bg</item>
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:editTextStyle">@style/RobotoEditTextStyle</item>
+        <item name="classify_item_title">@color/tabs_indicator_color</item>
+        <item name="classify_list_item_title">@color/news_detail_item_title</item>
+        <item name="classify_item_list_num_title">@color/details_hot_comment_time</item>
+        <item name="feedback_email_tv">@color/feedback_email_tv</item>
+        <item name="feedback_edittext_tv">@color/black</item>
+    </style>
+
+    <style name="ThemeDefault_2" parent="ThemeDefault">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="ThemeNight" parent="AppTheme">
+        <item name="title_bar_color">@color/title_bar_night</item>
+        <item name="title_bar_name_color">@color/white</item>
+        <item name="main_line_color">@color/divider_line_color</item>
+        <item name="m_background_tab_pressed">@drawable/title_bar_btn_selector_color</item>
+        <item name="main_activity_color">@color/main_bg_night</item>
+        <item name="fragment_main_backgroup">@color/main_bg_night</item>
+        <item name="edit_column_main_backgroup">@color/main_bg_night</item>
+        <item name="item_title">@color/white</item>
+        <item name="classify_item_title">@color/white</item>
+        <item name="classify_list_item_title">@color/white</item>
+        <item name="classify_item_list_num_title">@color/white</item>
+        <item name="news_detail_item_title">@color/white</item>
+        <item name="item_title_read">@color/item_title_night</item>
+        <item name="item_tag">@color/general_color</item>
+        <item name="news_detail_item_tag">@color/general_color</item>
+        <item name="news_item_btn_selector">@drawable/news_item_selector_night</item>
+        <item name="news_item_line_color">@color/item_title_night</item>
+        <item name="choose_fragment_bg">@color/item_title_night</item>
+        <item name="right_item_layout_bg">@color/divider_line_color</item>
+        <item name="left_menu_fb_name">@color/white</item>
+        <item name="left_menu_item_name">@color/white</item>
+        <item name="left_menu_version_name">@color/white</item>
+        <item name="left_menu_version_line">@color/white</item>
+        <item name="fragment_main_psts_tabs_background">@color/main_bg_night</item>
+        <item name="fragment_main_psts_tabs_indicator_color">@color/tabs_indicator_night</item>
+        <item name="fragment_main_psts_tabs_text_color">@color/tabs_item_text</item>
+        <item name="fragment_choose_card_backgroup_color">@color/white</item>
+        <item name="fragment_news_item_falsh">@color/white</item>
+        <item name="newsdetail_share_drawable">@drawable/details_share_selector</item>
+        <item name="button_comment_style_drawable">@drawable/button_comment_style</item>
+        <item name="zqzx_setting_main_color">@color/main_bg_night</item>
+        <item name="zqzx_ad_color">@color/main_bg_night</item>
+        <item name="zqzx_onclik_setting_item">@drawable/setting_item_selector_night</item>
+        <item name="setting_item_selector_color">@color/white</item>
+        <item name="zqzx_setting_item_text">@color/general_color</item>
+        <item name="zqzx_setting_item_right_text">@color/general_color</item>
+        <item name="zqzx_setting_line_color">@color/item_title_night</item>
+        <item name="zq_feedback_color">@color/main_bg_night</item>
+        <item name="zq_feedback_edit_color">@color/zq_feedback_edit_night</item>
+        <item name="zq_feedback_btn_color">@color/white</item>
+        <item name="zq_feedback_btn_submit">@drawable/zq_feedback_btn_selector</item>
+        <item name="zq_feedetbg_shape_bg">@drawable/zq_feedetbg_shape_night</item>
+        <item name="fragment_search_background_color">@color/main_bg_night</item>
+        <item name="search_content_background_color">@color/divider_line_color</item>
+        <item name="search_key_head_text_color">@color/white</item>
+        <item name="search_history_item_color">@color/main_bg_night</item>
+        <item name="my_comment_news_title">@color/white</item>
+        <item name="my_comment_top_nickname">@color/white</item>
+        <item name="my_comment_top_regtime">@color/white</item>
+        <item name="my_comment_nickname">@color/white</item>
+        <item name="my_comment_time">@color/general_color</item>
+        <item name="my_comment_news_selector">@drawable/my_comment_news_selector_night</item>
+        <item name="news_detail_rel_item_title">@color/white</item>
+        <item name="discover_fragment_title">@color/main_bg_night</item>
+        <item name="discover_fragment_item_title">@color/main_bg_night</item>
+        <item name="classify_item_top">#334E61</item>
+        <item name="discover_fragment_recyclerview_color">@color/divider_line_color</item>
+        <item name="discover_item_spacing_color">@color/divider_line_color</item>
+        <item name="discover_item_line_color">@color/item_title_night</item>
+        <item name="news_detail_related_line_color">@color/item_title_night</item>
+        <item name="classify_item_first_bg_color">@color/main_bg_night</item>
+        <item name="tag_subscribe_bg">@drawable/discovery_item_corners_bg_night</item>
+        <item name="detail_related_news_layout_bg">@color/main_bg_night</item>
+        <item name="details_news_source_selector_bg">@drawable/details_news_source_selector_night
+        </item>
+        <item name="details_news_praise_bg">@drawable/news_details_praise_night</item>
+        <item name="detail_related_news_bg">@color/main_bg_night</item>
+        <item name="detail_related_news_head_bg">@color/main_bg_night</item>
+        <item name="details_news_comments">@color/main_bg_night</item>
+        <item name="detail_recy_backgroup">@color/main_bg_night</item>
+        <item name="main_search_bg">@drawable/corners_bg_night</item>
+        <item name="search_head_layout_bg">@color/divider_line_color</item>
+        <item name="search_history_layout_bg">@color/main_bg_night</item>
+        <item name="editcolumn_line_bg">@color/divider_line_color</item>
+        <item name="subscribe_text_bg">@drawable/subscribe_item_bg_night</item>
+        <item name="main_edit_bg">@drawable/edit_corners_bg_night</item>
+        <item name="subscribe_textcolor">@color/white</item>
+        <item name="editcolumn_tv_color">@color/bg</item>
+        <item name="list_loading_color">@color/white</item>
+        <item name="rob_sofa_tv_color">@color/white</item>
+        <item name="search_head_tv_color">@color/general_color</item>
+        <item name="search_key_tv_color">@color/general_color</item>
+        <item name="app_progress_bar_bg">@color/main_bg_night</item>
+        <item name="comment_list_layout_bg">@color/main_bg_night</item>
+        <item name="comment_text_color">@color/white</item>
+        <item name="choose_fragment_line">@color/item_title_night</item>
+        <item name="news_detail_large_line_color">@color/detail_large_line</item>
+        <item name="news_detail_line_color">@color/detail_line_night</item>
+        <item name="news_detail_comment_bg">@drawable/news_detail_comment_night</item>
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:editTextStyle">@style/RobotoEditTextStyle</item>
+        <item name="feedback_email_tv">@color/white</item>
+        <item name="feedback_edittext_tv">@color/white</item>
+    </style>
+
+    <style name="Theme.CustomDialog_Activity" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="IMTheme.Basic" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="IMTheme.Transparent" parent="@style/IMTheme.Basic">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Theme.PageIndicatorDefaults" parent="android:Theme">
+        <!--<item name="vpiTabPageIndicatorStyle">@style/TabPageIndicator</item>-->
+
+        <!--<item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>-->
+
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
+        <item name="vpiLinePageIndicatorStyle">@style/CustomLinePageIndicator</item>
+        <item name="vpiTitlePageIndicatorStyle">@style/CustomTitlePageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="vpiUnderlinePageIndicatorStyle">@style/CustomUnderlinePageIndicator</item>
+
+    </style>
+
+    <style name="TabPageIndicator">
+        <item name="android:gravity">center</item>
+        <!--<item name="android:background">@drawable/tab_indicator</item>-->
+        <item name="android:background">@drawable/custom_tab_indicator</item>
+        <item name="android:minWidth">50dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@drawable/title_color_selector</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/custom_tab_indicator</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:minWidth">50dp</item>
+        <item name="android:divider">@drawable/custom_tab_indicator_divider</item>
+        <item name="android:dividerPadding">10dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@drawable/title_color_selector</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="CustomCirclePageIndicator">
+        <item name="fillColor">@color/fill_color</item>
+        <item name="strokeColor">@color/stroke_color</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="radius">10dp</item>
+        <item name="centered">true</item>
+    </style>
+
+    <style name="CustomLinePageIndicator">
+        <item name="strokeWidth">4dp</item>
+        <item name="lineWidth">30dp</item>
+        <item name="unselectedColor">@color/fill_color</item>
+        <item name="selectedColor">#FF880000</item>
+    </style>
+
+    <style name="CustomTitlePageIndicator">
+        <item name="android:background">#18FF0000</item>
+        <item name="footerColor">#FFAA2222</item>
+        <item name="footerLineHeight">1dp</item>
+        <item name="footerIndicatorHeight">3dp</item>
+        <item name="footerIndicatorStyle">underline</item>
+        <item name="android:textColor">#AA000000</item>
+        <item name="selectedColor">#FF000000</item>
+        <item name="selectedBold">true</item>
+    </style>
+
+    <style name="CustomUnderlinePageIndicator">
+        <item name="selectedColor">#FFCC0000</item>
+        <item name="android:background">#FFCCCCCC</item>
+        <item name="fadeLength">1000</item>
+        <item name="fadeDelay">1000</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+    </style>
+
+
+    <style name="MaterialProgressWheelStyle">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="matProg_barColor">#0177d9</item>
+        <item name="matProg_progressIndeterminate">true</item>
+    </style>
+
+    <style name="BackButtonStyle">
+        <item name="android:layout_width">@dimen/main_title_bar</item>
+        <item name="android:layout_height">@dimen/main_title_bar</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/background_tab_pressed_selector</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+
+    <style name="subscribe_my_tip_text">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="subscribe_seperate_line">
+        <item name="android:background">@color/subscribe_seperate_line</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dip</item>
+        <item name="android:layout_marginTop">14.0dip</item>
+        <item name="android:layout_marginBottom">14.0dip</item>
+    </style>
+
+    <style name="subscribe_more_tip_text" parent="@style/subscribe_my_tip_text">
+        <item name="android:textSize">13.0sp</item>
+    </style>
+
+    <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="mypopwindow_anim_style">
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowEnterAnimation">@anim/anim_popupwindow_show</item>
+        <!-- 指定消失的动画xml -->
+        <item name="android:windowExitAnimation">@anim/anim_popupwindow_hide</item>
+    </style>
+
+    <style name="edit_order_btn">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/ssxinhongse1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_order</item>
+        <item name="android:minWidth">56.0dip</item>
+        <item name="android:minHeight">24.0dip</item>
+    </style>
+
+    <style name="loadingProgressBar" parent="android:Widget.Holo.ProgressBar.Large" />
+
+    <style name="JoyNews.Widget.ProgressBar" parent="@android:style/Widget.ProgressBar">
+        <item name="android:background">@drawable/loading_logo</item>
+        <item name="android:maxWidth">50.0dip</item>
+        <item name="android:maxHeight">50.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/loading_animation</item>
+        <item name="android:minWidth">50.0dip</item>
+        <item name="android:minHeight">50.0dip</item>
+    </style>
+
+    <style name="SwitchButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="MaterialDesignStyle" parent="SwitchButtonStyle">
+        <item name="animationVelocity">0</item>
+        <item name="insetBottom">0dp</item>
+        <!--设置上下背景-->
+        <item name="insetTop">0dp</item>
+        <item name="insetLeft">10dp</item>
+        <item name="insetRight">10dp</item>
+        <item name="measureFactor">1.8</item>
+        <item name="offDrawable">@drawable/md_back_off</item>
+        <item name="onDrawable">@drawable/md_back_on</item>
+        <item name="thumbDrawable">@drawable/md_thumb</item>
+        <item name="thumb_margin">-6dp</item>
+    </style>
+
+
+    <style name="NotificationDate">
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="NotificationTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="NotificationText">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="line_v">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1dip</item>
+        <item name="android:background">?main_line_color</item>
+    </style>
+
+    <style name="main_tab_item2">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/main_menu_text</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="personal_item_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="setting_item_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?zqzx_onclik_setting_item</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+
+    <style name="setting_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_10</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">?zqzx_setting_item_text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="setting_img">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_10</item>
+        <item name="android:background">@drawable/bbs_modle_jt</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="line_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_height</item>
+        <item name="android:background">?zqzx_setting_line_color</item>
+    </style>
+
+    <style name="setting_line_layout" parent="line_layout">
+        <item name="android:layout_marginLeft">@dimen/margin_15</item>
+        <item name="android:layout_marginRight">@dimen/margin_15</item>
+    </style>
+
+    <style name="RippleStyleBtn">
+        <item name="rippleOverlay">@bool/ripple_overlay_btn_copy_gift_code</item>
+        <item name="rippleHover">@bool/ripple_hover_btn_copy_gift_code</item>
+        <item name="rippleDelayClick">@bool/ripple_delay_click_btn_copy_gift_code</item>
+        <item name="ripplePersistent">@bool/ripple_persistent_btn_copy_gift_code</item>
+        <item name="rippleDuration">@integer/ripple_duration_btn_copy_gift_code</item>
+        <item name="rippleFadeDuration">@integer/ripple_fade_duration_btn_copy_gift_code</item>
+        <item name="rippleAlpha">@dimen/ripple_alpha_btn_copy_gift_code</item>
+        <item name="rippleDimension">@dimen/ripple_dimen_btn_copy_gift_code</item>
+        <item name="rippleColor">@color/ripple_color_btn_copy_gift_code</item>
+    </style>
+
+    <style name="PopMenuAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <style name="news_detail_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">?news_detail_line_color</item>
+    </style>
+
+    <style name="news_detail_large_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:background">?news_detail_large_line_color</item>
+    </style>
+
+    <style name="news_detail_related_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_height</item>
+        <item name="android:layout_marginRight">13dp</item>
+        <item name="android:layout_marginLeft">13dp</item>
+        <item name="android:background">?news_detail_related_line_color</item>
+    </style>
+
+    <style name="Theme.AppStartLoad" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/welcome</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="item_title_style">
+        <item name="android:lineSpacingExtra">@dimen/item_title_line</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/item_title_size</item>
+    </style>
+</resources>

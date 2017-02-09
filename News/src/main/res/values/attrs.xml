@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <declare-styleable name="DonutProgress">
+        <attr name="donut_progress" format="integer" />
+        <attr name="donut_max" format="integer" />
+        <attr name="donut_unfinished_color" format="color" />
+        <attr name="donut_finished_color" format="color" />
+        <attr name="donut_finished_stroke_width" format="dimension" />
+        <attr name="donut_unfinished_stroke_width" format="dimension" />
+        <attr name="donut_text_size" format="dimension" />
+        <attr name="donut_text_color" format="color" />
+        <attr name="donut_prefix_text" format="string" />
+        <attr name="donut_suffix_text" format="string" />
+        <attr name="donut_background_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="slideswitch">
+        <attr name="themeColor" format="color" />
+        <attr name="isOpen" format="boolean" />
+        <attr name="shape">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="AutoScaleTextView">
+        <attr name="minTextSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CoverFlow">
+        <attr name="imageWidth" format="dimension" />
+        <attr name="imageHeight" format="dimension" />
+        <attr name="withReflection" format="boolean" />
+        <attr name="reflectionGap" format="dimension" />
+        <attr name="imageReflectionRatio" format="float" />
+    </declare-styleable>
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_offset" format="dimension" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="JazzyViewPager">
+        <attr name="style">
+            <enum name="standard" value="0" />
+            <enum name="tablet" value="1" />
+            <enum name="cubein" value="2" />
+            <enum name="cubeout" value="3" />
+            <enum name="flipvertical" value="4" />
+            <enum name="fliphorizontal" value="5" />
+            <enum name="stack" value="6" />
+            <enum name="zoomin" value="7" />
+            <enum name="zoomout" value="8" />
+            <enum name="rotateup" value="9" />
+            <enum name="rotatedown" value="10" />
+            <enum name="accordion" value="11" />
+        </attr>
+        <attr name="outlineEnabled" format="boolean" />
+        <attr name="outlineColor" format="color|reference" />
+        <attr name="fadeabled" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="FloatingActionButton">
+        <attr name="drawable" format="integer" />
+        <attr name="fab_color" format="color" />
+        <attr name="shadowRadius" format="float" />
+        <attr name="shadowDx" format="float" />
+        <attr name="shadowDy" format="float" />
+        <attr name="shadowColor" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="twowayview_TwoWayLayoutManager">
+        <attr name="android:orientation" tools:ignore="ResourceName" />
+    </declare-styleable>
+
+    <declare-styleable name="twowayview_TwoWayView">
+        <attr name="twowayview_layoutManager" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="twowayview_GridLayoutManager">
+        <attr name="twowayview_numColumns" format="integer" />
+        <attr name="twowayview_numRows" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="twowayview_SpacingItemDecoration">
+        <attr name="android:verticalSpacing" tools:ignore="ResourceName" />
+        <attr name="android:horizontalSpacing" tools:ignore="ResourceName" />
+    </declare-styleable>
+
+    <declare-styleable name="twowayview_DividerItemDecoration">
+        <attr name="android:divider" tools:ignore="ResourceName" />
+        <attr name="twowayview_verticalDivider" format="reference" />
+        <attr name="twowayview_horizontalDivider" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="twowayview_StaggeredGridViewChild">
+        <attr name="twowayview_span" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="twowayview_SpannableGridViewChild">
+        <attr name="twowayview_colSpan" format="integer" />
+        <attr name="twowayview_rowSpan" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialRippleLayout">
+        <attr name="rippleColor" format="color" />
+        <attr name="rippleDimension" format="dimension" />
+        <attr name="rippleOverlay" format="boolean" />
+        <attr name="rippleAlpha" format="float" />
+        <attr name="rippleDuration" format="integer" />
+        <attr name="rippleFadeDuration" format="integer" />
+        <attr name="rippleHover" format="boolean" />
+        <attr name="rippleBackground" format="color" />
+        <attr name="rippleDelayClick" format="boolean" />
+        <attr name="ripplePersistent" format="boolean" />
+        <attr name="rippleInAdapter" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension" />
+        <attr name="ci_height" format="dimension" />
+        <attr name="ci_margin" format="dimension" />
+        <attr name="ci_animator" format="reference" />
+        <attr name="ci_animator_reverse" format="reference" />
+        <attr name="ci_drawable" format="reference" />
+        <attr name="ci_drawable_unselected" format="reference" />
+    </declare-styleable>
+
+    <!--  -->
+    <declare-styleable name="StarRatingbar">
+        <attr name="starNum" format="integer" />
+        <attr name="totalNum" format="integer" />
+    </declare-styleable>
+
+    <!-- 虚线 -->
+    <declare-styleable name="DotView">
+        <attr name="linecolor" format="integer" />
+        <attr name="dashed" format="integer" />
+    </declare-styleable>
+    <!-- 垂直滚动viewpager -->
+    <declare-styleable name="DirectionalViewPager">
+        <attr name="android:orientation" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="onDrawable" format="reference" />
+        <attr name="offDrawable" format="reference" />
+        <attr name="thumbDrawable" format="reference" />
+        <attr name="thumb_margin" format="dimension|reference" />
+        <attr name="thumb_marginTop" format="dimension|reference" />
+        <attr name="thumb_marginBottom" format="dimension|reference" />
+        <attr name="thumb_marginLeft" format="dimension|reference" />
+        <attr name="thumb_marginRight" format="dimension|reference" />
+        <attr name="thumb_width" format="dimension|reference" />
+        <attr name="thumb_height" format="dimension|reference" />
+        <attr name="onColor" format="color|reference" />
+        <attr name="offColor" format="color|reference" />
+        <attr name="thumbColor" format="color|reference" />
+        <attr name="thumbPressedColor" format="color|reference" />
+        <attr name="animationVelocity" format="integer" />
+        <attr name="custom_radius" format="integer" />
+        <attr name="measureFactor" format="float" />
+        <attr name="insetLeft" format="dimension|reference" />
+        <attr name="insetRight" format="dimension|reference" />
+        <attr name="insetTop" format="dimension|reference" />
+        <attr name="insetBottom" format="dimension|reference" />
+    </declare-styleable>
+
+    <!-- MainActivity-->
+    <attr name="title_bar_color" format="reference|color" />
+    <attr name="title_bar_name_color" format="reference|color" />
+    <attr name="m_background_tab_pressed" format="reference|color" />
+    <attr name="main_line_color" format="reference|color" />
+
+    <attr name="fragment_main_backgroup" format="reference|color" />
+    <attr name="edit_column_main_backgroup" format="reference|color" />
+    <attr name="item_title" format="reference|color" />
+    <attr name="item_title_read" format="reference|color"></attr>
+    <attr name="item_tag" format="reference|color" />
+    <attr name="news_item_btn_selector" format="reference|color"/>
+    <attr name="news_item_line_color" format="reference|color"/>
+    <attr name="choose_fragment_bg" format="reference|color"/>
+
+
+    <!--侧滑菜单-->
+    <attr name="left_menu_fb_name" format="reference|color" />
+    <attr name="left_menu_item_name" format="reference|color" />
+    <attr name="left_menu_version_name" format="reference|color" />
+    <attr name="left_menu_version_line" format="reference|color" />
+    <attr name="left_menu_login_facebook_button" format="reference|color" />
+    <!-- newsfragment-->
+    <attr name="fragment_main_psts_tabs_background" format="reference|color" />
+    <attr name="fragment_main_psts_tabs_indicator_color" format="reference|color" />
+    <attr name="fragment_main_psts_tabs_text_color" format="reference|color" />
+    <!-- choosefragment-->
+    <attr name="fragment_choose_card_backgroup_color" format="reference|color" />
+    <!-- newsitemfragment-->
+    <attr name="fragment_news_item_falsh" format="reference|color" />
+    <!-- newsdetails-->
+    <attr name="newsdetail_share_drawable" format="reference|color" />
+    <attr name="button_comment_style_drawable" format="reference|color" />
+
+    <!--Setting-->
+    <attr name="zqzx_setting_main_color" format="reference|color" />
+    <attr name="zqzx_onclik_setting_item" format="reference|color" />
+    <attr name="setting_item_selector_color" format="reference" />
+    <attr name="zqzx_setting_item_text" format="reference|color" />
+    <attr name="zqzx_setting_item_right_text" format="reference|color" />
+    <attr name="zqzx_setting_line_color" format="reference|color" />
+
+    <!-- FeedBack-->
+    <attr name="zq_feedback_color" format="reference|color" />
+    <attr name="zq_feedback_edit_color" format="reference|color" />
+    <attr name="zq_feedback_btn_color" format="reference|color" />
+    <attr name="zq_feedback_btn_submit" format="reference|color" />
+    <attr name="zq_feedetbg_shape_bg" format="reference|color" />
+
+    <attr name="main_activity_color" format="reference|color" />
+
+    <attr name="search_key_head_text_color" format="reference|color" />
+    <attr name="search_content_background_color" format="reference|color" />
+
+    <attr name="fragment_search_background_color" format="reference|color" />
+    <attr name="search_history_item_color" format="reference|color" />
+
+    <attr name="my_comment_news_selector" format="reference|color" />
+    <attr name="my_comment_news_title" format="reference|color" />
+    <attr name="my_comment_nickname" format="reference|color" />
+    <attr name="my_comment_top_nickname" format="reference|color" />
+    <attr name="my_comment_top_regtime" format="reference|color" />
+    <attr name="my_comment_time" format="reference|color" />
+
+
+    <attr name="news_detail_rel_item_title" format="reference|color" />
+
+
+    <attr name="right_item_layout_bg" format="reference|color" />
+    <attr name="discover_fragment_title" format="reference|color" />
+    <attr name="discover_fragment_item_title" format="reference|color" />
+    <attr name="classify_item_top" format="reference|color" />
+    <attr name="discover_fragment_recyclerview_color" format="reference|color" />
+    <attr name="discover_item_spacing_color" format="reference|color" />
+    <attr name="discover_item_line_color" format="reference|color" />
+    <attr name="classify_item_first_bg_color" format="reference|color" />
+    <attr name="tag_subscribe_bg" format="reference|color" />
+    <attr name="detail_related_news_layout_bg" format="reference|color" />
+    <attr name="details_news_source_selector_bg" format="reference|color" />
+    <attr name="details_news_praise_bg" format="reference|color" />
+    <attr name="detail_related_news_bg" format="reference|color" />
+    <attr name="detail_related_news_head_bg" format="reference|color" />
+    <attr name="details_news_comments" format="reference|color" />
+    <attr name="detail_recy_backgroup" format="reference|color" />
+    <attr name="main_search_bg" format="reference|color" />
+    <attr name="search_head_layout_bg" format="reference|color" />
+    <attr name="search_history_layout_bg" format="reference|color" />
+    <attr name="editcolumn_line_bg" format="reference|color" />
+    <attr name="main_edit_bg" format="reference|color" />
+    <attr name="subscribe_text_bg" format="reference|color" />
+    <attr name="subscribe_textcolor" format="reference|color" />
+    <attr name="editcolumn_tv_color" format="reference|color" />
+    <attr name="list_loading_color" format="reference|color" />
+    <attr name="rob_sofa_tv_color" format="reference|color" />
+    <attr name="search_head_tv_color" format="reference|color" />
+    <attr name="search_key_tv_color" format="reference|color" />
+    <attr name="app_progress_bar_bg" format="reference|color" />
+    <attr name="comment_list_layout_bg" format="reference|color" />
+    <attr name="comment_text_color" format="reference|color" />
+    <attr name="choose_fragment_line" format="reference|color" />
+    <attr name="zqzx_ad_color" format="reference|color" />
+    <attr name="news_detail_large_line_color" format="reference|color" />
+    <attr name="news_detail_line_color" format="reference|color" />
+    <attr name="news_detail_comment_bg" format="reference|color" />
+    <attr name="news_detail_item_title" format="reference|color" />
+    <attr name="news_detail_item_tag" format="reference|color" />
+    <attr name="news_detail_related_line_color" format="reference|color" />
+    <attr name="classify_item_title" format="reference|color" />
+    <attr name="classify_list_item_title" format="reference|color" />
+    <attr name="classify_item_list_num_title" format="reference|color" />
+    <attr name="feedback_email_tv" format="reference|color" />
+    <attr name="feedback_edittext_tv" format="reference|color" />
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_title_bar"
+        android:background="?title_bar_color"
+        android:orientation="horizontal">
+
+        <!--@color/toolbar_bg-->
+        <ImageView
+            android:id="@+id/stitle_ll_back1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/main_title_bar"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/background_tab_pressed_selector"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/stitle_ll_back"
+            android:layout_width="@dimen/main_title_bar"
+            android:layout_height="@dimen/main_title_bar"
+            android:background="?m_background_tab_pressed">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/details_back_btn" />
+
+        </RelativeLayout>
+
+
+        <com.hzpd.ui.widget.FontTextView
+            android:id="@+id/stitle_tv_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/prompt_column_subscribe"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_bar_size" />
+
+
+        <com.hzpd.ui.widget.FontTextView
+            android:id="@+id/stitle_tv_right"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text="清空"
+            android:background="?m_background_tab_pressed"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="#e0e0e0"
+        android:visibility="gone" />
+</LinearLayout>

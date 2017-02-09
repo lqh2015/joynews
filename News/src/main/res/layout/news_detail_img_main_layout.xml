@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- head 标题展示信息-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone">
+
+        <!--popu菜单选项-->
+        <LinearLayout
+            android:id="@+id/imgdetails_title_pl"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="4dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bt_more_unselected" />
+        </LinearLayout>
+        <!--评论-->
+        <LinearLayout
+            android:id="@+id/imgdetails_title_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/imgdetails_title_pl"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.hzpd.ui.widget.FontTextView
+                android:id="@+id/imgdetails_title_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow_font"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.hzpd.custorm.ImageViewPager
+            android:id="@+id/img_detail_test_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/album_rl_head"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/main_title_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/background_tab_pressed_selector1" />
+
+            <ImageView
+                android:id="@+id/pop_xiazai_iv1"
+                android:layout_width="55dp"
+                android:layout_height="21dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/bt_xiazai_unselected" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <com.hzpd.custorm.DonutProgress xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/album_donutProgress"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:donut_background_color="@color/grey_font"
+                app:donut_finished_color="@color/zqzx_txt_darkblue"
+                app:donut_progress="0"
+                app:donut_text_color="@color/zqzx_txt_darkblue"
+                app:donut_text_size="22sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--底部信息展示-->
+                <RelativeLayout
+                    android:id="@+id/album_rl_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/picloop_shape"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp">
+                    <!--图片标题-->
+                    <RelativeLayout
+                        android:id="@+id/img_detail_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip">
+
+                        <com.hzpd.ui.widget.FontTextView
+                            android:id="@+id/img_detail_title_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/img_detial_number_id"
+                            android:ellipsize="end"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <com.hzpd.ui.widget.FontTextView
+                            android:id="@+id/img_detial_number_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dip"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <!-- 图片详细介绍-->
+                    <ScrollView
+                        android:id="@+id/image_scroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/img_detail_title">
+
+                        <com.hzpd.ui.widget.FontTextView
+                            android:id="@+id/img_detail_content_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </ScrollView>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

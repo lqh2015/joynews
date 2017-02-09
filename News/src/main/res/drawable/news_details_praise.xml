@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item-->
+    <!--android:state_pressed="true"-->
+    <!--android:drawable="@color/tag_select"/>-->
+    <!--<item-->
+    <!--android:drawable="@color/tag_unselect"/>-->
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<shape xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--<solid android:color="@color/article_like" />-->
+
+    <!--<stroke-->
+    <!--android:width="0.1dp"-->
+    <!--android:color="@color/details_bg_color" />-->
+    <!--<corners android:radius="55dp" />-->
+
+    <!--</shape>-->
+    <item android:state_pressed="true">
+        <shape>
+            <stroke android:width="0.1dp" android:color="#ffcc80" />
+            <!-- 点击效果-->
+            <solid android:color="#ffcc80" />
+            <corners android:radius="55dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <stroke android:width="0.1dp" android:color="#ffe0b2" />
+            <solid android:color="#ffe0b2" />
+            <corners android:radius="55dp" />
+        </shape>
+
+    </item>
+
+</selector>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newsitem_ll2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/view_line"
+        android:layout_margin="10dp">
+
+        <!--图片展示-->
+        <ImageView
+            android:id="@+id/lehuo_img_id"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop" />
+
+        <!--新闻介绍列表-->
+        <RelativeLayout
+            android:id="@+id/nitem_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/lehuo_img_id">
+
+            <!--标题-->
+            <com.hzpd.ui.widget.FontTextView
+                android:id="@+id/lehuo_content_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:minLines="2"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+        <!--标签列表-->
+        <LinearLayout
+            android:id="@+id/ll_tag"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/nitem_ll"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/lehuo_img_id"
+            android:layout_toRightOf="@+id/lehuo_img_id"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <!--类型标签-->
+                <ImageView
+                    android:id="@+id/nli_foot"
+                    android:layout_width="25dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone" />
+
+                <!--来源source-->
+                <com.hzpd.ui.widget.FontTextView
+                    android:id="@+id/lehuo_content_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:text="Okezone"
+                    android:textColor="@color/main_tag"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <!--收藏数collect-->
+                <com.hzpd.ui.widget.FontTextView
+                    android:id="@+id/lehuo_content_collectcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:drawableLeft="@drawable/main_collect_counts"
+                    android:drawablePadding="2dp"
+                    android:textColor="@color/main_tag"
+                    android:textSize="@dimen/tag"
+                    android:visibility="gone" />
+
+                <!--评论数-->
+                <com.hzpd.ui.widget.FontTextView
+                    android:id="@+id/lehuo_commentcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/main_comment_counts"
+                    android:drawablePadding="2dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/main_tag"
+                    android:textSize="@dimen/tag"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <!--时间
+            android:drawableLeft="@drawable/zq_icon_updatetime"
+                android:drawablePadding="3dp"-->
+            <com.hzpd.ui.widget.FontTextView
+                android:id="@+id/lehuo_sj_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:maxLines="1"
+                android:text="09-27"
+                android:textColor="@color/time_color"
+                android:textSize="@dimen/tag" />
+
+            <ImageView
+                android:id="@+id/newsitem_unlike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/main_unlike"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/lehuo_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

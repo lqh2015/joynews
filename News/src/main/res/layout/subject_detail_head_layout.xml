@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--专题图片-->
+    <ImageView
+        android:id="@+id/zhuanti_header_iv"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="bottom"
+        android:src="@color/grey_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:padding="15dp">
+
+        <!--专题名称-->
+        <TextView
+            android:id="@+id/zhuanti_tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:text="12313123123"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!--文章数目-->
+        <TextView
+            android:id="@+id/zhuanti_tv_con"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="12313123123"
+            android:textColor="@color/rect"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</FrameLayout>
+
+
+

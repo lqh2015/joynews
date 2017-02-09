@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zqzx_bg_normal">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/zqzx_bg_normal"
+        android:orientation="vertical">
+
+        <!--标题栏-->
+        <include layout="@layout/main_top_layout" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_gravity="center"
+            android:background="?discover_fragment_title"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/tv_week"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/tabmenu_rank_explore"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="@string/discovery_name"
+                    android:textColor="@color/rank_menu_text"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.1dip"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:background="?discover_item_line_color" />
+
+            <LinearLayout
+                android:id="@+id/tv_month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/tabmenu_rank_classify"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:text="@string/classify_name"
+                    android:textColor="@color/rank_menu_text"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/rank_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/cover_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:background="@color/add_transparency"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.hzpd.ui.widget.SwipeCloseLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/news_detail_root"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/news_detail_main_root_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--标题-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/details_title_bar"
+                        android:background="?title_bar_color"
+                        android:orientation="horizontal">
+
+                        <!--返回按钮-->
+                        <RelativeLayout
+                            android:id="@+id/news_detail_bak"
+                            android:layout_width="@dimen/details_title_bar"
+                            android:layout_height="@dimen/details_title_bar"
+                            android:background="@drawable/title_bar_details_btn_selector_color">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/news_detail_back" />
+
+                        </RelativeLayout>
+
+                        <!--显示tag View-->
+                        <LinearLayout
+                            android:id="@+id/details_tag_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <!--tag图片-->
+                            <ImageView
+                                android:id="@+id/details_head_tag_img"
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:layout_gravity="center_vertical"
+                                android:scaleType="centerCrop"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <!--tag名称-->
+                                <com.hzpd.ui.widget.FontTextView
+                                    android:id="@+id/details_head_tag_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top"
+                                    android:text="Bloa"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
+
+                                <!--tag订阅数-->
+                                <TextView
+                                    android:id="@+id/details_head_tag_num"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:textColor="@color/white"
+                                    android:textSize="8sp"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <!--点击订阅-->
+                            <TextView
+                                android:id="@+id/details_tv_subscribe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/details_subscription_corners_bg"
+                                android:drawablePadding="3dp"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="3dp"
+                                android:text="@string/discovery_follow"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_height"
+                        android:background="#e0e0e0"
+                        android:visibility="gone" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?detail_recy_backgroup">
+
+                        <com.hzpd.ui.widget.CustomRecyclerView
+                            android:id="@+id/recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?detail_recy_backgroup"
+                            android:overScrollMode="ifContentScrolls"
+                            android:scrollbarStyle="outsideOverlay"
+                            android:scrollbars="vertical" />
+
+                        <!-- 加载Loading-->
+                        <include layout="@layout/loading_layout" />
+                        <!--数据为空时显示-->
+                        <FrameLayout
+                            android:id="@+id/news_detail_nonetwork"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?app_progress_bar_bg"
+                            android:paddingBottom="100dp"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/background_empty"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/net_broken_iv" />
+
+                                <TextView
+                                    android:id="@+id/text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/margin_10"
+                                    android:text="@string/click_here_to_refresh"
+                                    android:textColor="@color/bg" />
+
+                                <Button
+                                    android:id="@+id/click_refresh_btn"
+                                    android:layout_width="200dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="40dp"
+                                    android:background="@drawable/feed_back_bg_btn"
+                                    android:text="@string/click_refresh_btn_tv"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+
+                        </FrameLayout>
+
+
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--分割线-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="?discover_item_line_color" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- 底部菜单 -->
+                <LinearLayout
+                    android:id="@+id/news_detail_ll_bottom1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?zqzx_setting_main_color"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/comment_box"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/newdetail_ll_comm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?news_detail_comment_bg"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <com.hzpd.ui.widget.FontTextView
+                                android:id="@+id/newdetail_tv_comm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="5dp"
+                                android:singleLine="true"
+                                android:text="@string/prompt_write_comment"
+                                android:textColor="#bdbdbd"
+                                android:textSize="15sp" />
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/newdetail_comment"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:contentDescription="@null"
+                            android:paddingBottom="@dimen/margin_10"
+                            android:paddingTop="@dimen/margin_10"
+                            android:visibility="gone" />
+
+                        <!--分享-->
+                        <ImageView
+                            android:id="@+id/newdetail_share"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:contentDescription="@null"
+                            android:paddingBottom="@dimen/margin_10"
+                            android:paddingTop="@dimen/margin_10"
+                            android:src="?newsdetail_share_drawable" />
+
+                        <!--收藏-->
+                        <ImageView
+                            android:id="@+id/newdetail_collection"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:contentDescription="@null"
+                            android:paddingBottom="@dimen/margin_10"
+                            android:paddingTop="@dimen/margin_10"
+                            android:src="@drawable/details_collect_select" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </com.hzpd.ui.widget.SwipeCloseLayout>
+
+
+</FrameLayout>

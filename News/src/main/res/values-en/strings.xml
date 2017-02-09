@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--提示-->
+    <string name="tips">Notification</string>
+    <!--设置-->
+    <string name="setting">Setting</string>
+    <!--确定-->
+    <string name="sure">OK</string>
+    <!--取消-->
+    <string name="cancel">Cancel</string>
+    <!--安装-->
+    <string name="install">Install</string>
+    <!--狠心拒绝-->
+    <string name="reject">Reject</string>
+    <!--土豪勿扰-->
+    <string name="bye">Decline</string>
+    <!--现在切换-->
+    <string name="change">Change</string>
+    <!--去评价-->
+    <string name="rate">Rate Us</string>
+    <!--当前没有网络，无法浏览新闻，是否开启网络？-->
+    <string name="tip_offline">No Connectivity. Check Your Internet Connection.</string>
+    <!--您已切换到移动网络, 建议切换到省流量模式(不下载图片)? -->
+    <string name="tip_mobile">Mobile Data Connection Detected. Change to No Picture Mode? </string>
+    <!--感谢您的使用! 如果喜欢我们, 请给我们五星评价。 -->
+    <string name="tip_rate">Thank You For Using Berkin. Don’t Forget to Give Us 5 Stars.</string>
+
+    <string name="install_ok">Installation Complete</string>
+
+    <!--已切换到省流量模式-->
+    <string name="switch_save_flow">Change to No Picture Mode</string>
+    <!--已切换到Standar Mode-->
+    <string name="switch_normal">Change to Standard Mode</string>
+
+    <!--当前是WIFI网络，不消耗流量，已自动切换到Standar Mode-->
+    <string name="switch_wifi">WiFi Detected. Change to Standard Mode.</string>
+
+    <string name="install_tips">Like Us? Install Now!</string>
+
+    <string name="error_delete">News Has Been Deleted</string>
+    <string name="page_save_mode">No Picture Mode</string>
+    <string name="page_best_mode">Standard Mode</string>
+
+    <!-- 翻译 -->
+    <!-- 本地更新 -->
+    <string name="update_counts_head">Has Been Update</string>
+    <string name="local_update_now">Update</string>
+    <string name="local_update_later">Later</string>
+    <string name="local_update_install">Install Now</string>
+    <string name="local_downloading_ticker">Update Link App</string>
+    <string name="local_downloading">Download Update... %1$s </string>
+
+    <string name="local_update_ticker">Background Downloading</string>
+    <string name="local_update_done_ticker">Update Complete</string>
+    <string name="app_notify_title">Berkin - Berita Terkini</string>
+    <string name="app_notify_content">The Most Comprehensive and Trustworthy News Application. Berkin-Berita Terkini is Made From You and Just For You.</string>
+
+    <string name="recommend">Recommend</string>
+    <string name="comment_ok">Comment Success</string>
+    <string name="search_none">"Sorry, We Can’t Find It"</string>
+    <string name="language">Language</string>
+    <!-- 搜索页面 -->
+    <string name="search_empty_content">Search News</string>
+    <string name="search_key_head">Search Popular</string>
+    <string name="search_history_head">Search History</string>
+    <string name="search_history_clear">Delete History</string>
+    <!--
+		"     (&#34; 或 &quot;)
+		'     (&#39; 或 &apos;)
+		&     (&#38; 或 &amp;)
+		lt(<) (&#60; 或 &lt;)
+		gt(>) (&#62; 或 &gt;)
+
+    -->
+    <string name="app_name">Berkin</string>
+
+    <string name="video_layout_loading">Loading...</string>
+
+    <string name="folder_all">All Picture</string>
+    <string name="preview">Preview</string>
+    <string name="msg_no_camera">No Camera</string>
+    <string name="msg_amount_limit">Reach Selection Limit</string>
+
+    <string name="about_us">    </string>
+    <string name="settings_font">Font</string>
+    <string name="settings_option_font_large">Large</string>
+    <string name="settings_option_font_medium">Medium</string>
+    <string name="settings_option_font_small">Small</string>
+    <string name="settings_push">Notification</string>
+    <string name="settings_clear_cache">Clean History</string>
+    <string name="settings_check_update">Check for Update</string>
+    <string name="settings_feedback">Suggestion</string>
+    <string name="settings_about_us">About Us</string>
+    <string name="title_more_column">Add Column</string>
+
+    <string name="title_user_register"> List</string>
+    <string name="title_activity_personal_award">Personal Information</string>
+    <string name="title_activity_vote_detail">Vote Option Detail</string>
+    <string name="title_activity_register">Sign Up</string>
+    <string name="title_activity_vote">Vote</string>
+    <string name="title_activity_award">Reward</string>
+    <string name="title_activity_detail">Activity Detail</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_login">Login</string>
+    <string name="title_about_us">About Us</string>
+    <string name="login">Login</string>
+
+
+    <string name="prompt_votes">%1$d voting</string>
+    <string name="prompt_column_subscribe">Subscribe Column</string>
+    <string name="prompt_my_msg">Message</string>
+    <string name="prompt_clear_cache_dialog_title">Clear Cache Dialog Title</string>
+    <string name="prompt_clear_cache_dialog_msg">Clear Cache Dialog Message</string>
+    <string name="prompt_subject">Special Topic</string>
+    <string name="prompt_feedback">Feedback</string>
+    <string name="prompt_start_lottery">Lottery Start</string>
+    <string name="prompt_seconds">%1$d Second</string>
+    <string name="prompt_get_again">Recovery</string>
+    <string name="prompt_find_password">Password Recovery</string>
+    <string name="prompt_change_password">Change Password</string>
+
+
+    <string name="prompt_take_photo">Take Picture</string>
+    <string name="prompt_male">Male</string>
+    <string name="prompt_female">Female</string>
+    <string name="prompt_keep_secret"> Keep Secret</string>
+    <string name="prompt_yesterday">Yesterday</string>
+    <string name="prompt_today">Today</string>
+
+    <string name="prompt_accept_award">Accept Reward</string>
+    <string name="prompt_real_name">Real Name</string>
+    <string name="prompt_phone_number">Phone Number</string>
+    <string name="prompt_submit">Submit</string>
+    <string name="prompt_apply">Apply</string>
+    <string name="prompt_apply_on_cover">Apply on Cover</string>
+    <string name="prompt_vote">Vote</string>
+    <string name="prompt_lottery">Lucky Draw</string>
+    <string name="prompt_share">Share</string>
+    <string name="prompt_auditing">Check</string>
+    <string name="prompt_click_to_add_or_cancel">Click to Add or Cancel</string>
+    <string name="prompt_get_captcha">Get Captcha</string>
+    <string name="prompt_verify_captcha">Verify Captcha</string>
+    <string name="prompt_register_with_space">Register</string>
+    <string name="prompt_write_comment">Write Comment</string>
+    <string name="prompt_image">Image</string>
+    <string name="prompt_all_images">All Image</string>
+    <string name="prompt_image_plural">%1$d gambar</string>
+    <string name="prompt_preview">Preview</string>
+    <string name="prompt_complete">Complete</string>
+    <string name="prompt_complete_with_number">Complete(%1$d/%2$d)</string>
+    <string name="prompt_forget_password">Forget Password</string>
+    <string name="prompt_has_no_account">No Account?</string>
+    <string name="prompt_register">Register</string>
+    <string name="prompt_nickname">Nickname</string>
+    <string name="prompt_sex">Gender:</string>
+    <string name="prompt_i_has_comment">Already Commented</string>
+    <string name="prompt_logout">Logout</string>
+    <string name="prompt_vote_rule">Vote Rule</string>
+
+    <string name="prompt_send">Send</string>
+    <string name="prompt_login_now">Login Now</string>
+    <string name="prompt_login_facebook">Login via Facebook</string>
+    <string name="prompt_collect">Favorite</string>
+    <string name="hint_input_new_nickname">Input New Nickname</string>
+    <string name="hint_input_phone"> Telephone or Mobile Phone </string>
+    <string name="hint_msm_captcha"> Input Captcha</string>
+    <string name="hint_phone_number"> Input Phone Number </string>
+    <string name="hint_sex">Male or Female</string>
+    <string name="hint_date">eg: 2014-12-16</string>
+    <string name="hint_award_send_address">Address</string>
+    <string name="hint_please_input_password">Please Input Password</string>
+    <string name="hint_please_input_password_again"> Please Input Password Again </string>
+    <string name="hint_input_new_password">Input New Password</string>
+    <string name="hint_confirm_password">Confirm New Password</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_feedback_at_content">Feedback</string>
+    <string name="hint_feedback_at_email">Leave Your Email Address</string>
+    <string name="pull_to_refresh_reached_end">Already Reach Newest Article</string>
+    <string name="comment_mine">My Comment</string>
+    <string name="comment">Comment</string>
+    <string name="toast_server_error">Server Error</string>
+    <string name="toast_server_no_response">Server No Response</string>
+    <string name="toast_cannot_connect_to_server">Can Not Connect to Server</string>
+    <string name="toast_cannot_connect_network">Can Not Connect to Network</string>
+    <string name="toast_check_network">Check Your Network</string>
+    <string name="toast_collect_success">Success</string>
+    <string name="toast_collect_failed">Failed </string>
+    <string name="toast_collect_cancelled">Cancelled </string>
+    <string name="toast_delete_success">Delete Success</string>
+    <string name="toast_delete_failed">Delete Failed</string>
+    <string name="toast_no_sdcard">No SD Card</string>
+    <string name="toast_image_format_is_wrong">Image Format is Wrong</string>
+    <string name="toast_phone_format_is_wrong">Phone Format is Wrong</string>
+    <string name="toast_email_format_is_wrong">Email Format is Wrong</string>
+    <string name="toast_date_format_is_wrong">Date Format is Wrong, eg: yyyy-mm-dd</string>
+    <string name="toast_qq_format_is_wrong">Wrong QQ Format</string>
+    <string name="toast_start_download">Start Download</string>
+    <string name="toast_downloaded_at">Downloaded At?</string>
+    <string name="toast_download_failed">Download Failed</string>
+    <string name="toast_bind_success">Bind Success</string>
+    <string name="toast_bind_failed"> Bind Failed</string>
+    <string name="toast_cache_failed"> Cache Failed </string>
+    <string name="toast_xx_cannot_be_empty">Can Not be Empty</string>
+    <string name="toast_feedback_cannot_be_short">Too Short</string>
+    <string name="toast_email_cannot_be_error">Email Address Error</string>
+    <string name="toast_input_cannot_be_empty">Can Not Be Empty</string>
+    <string name="toast_fail_to_comment">Comment Failed</string>
+    <string name="toast_activity_not_started"> Activity Not Started</string>
+    <string name="toast_take_award">Congratulations! Take Your Reward</string>
+    <string name="toast_no_award">I’m Sorry, Maybe Next Time</string>
+    <string name="toast_award">Rewards:%1$s</string>
+    <string name="toast_apply_success">Apply Success</string>
+    <string name="toast_input_number">Input Number</string>
+    <string name="toast_no_data_now">No Data Now</string>
+    <string name="toast_captcha_is_wrong">Captcha is Wrong</string>
+    <string name="toast_captcha_get_success">Captcha Success</string>
+    <string name="toast_captcha_get_failed">Captcha Failed</string>
+    <string name="toast_input_phone">Input Phone Number</string>
+    <string name="toast_phone_number_count_error">Phone Number Error</string>
+    <string name="toast_verify_success">Verify Success</string>
+    <string name="toast_app_not_installed">App Not Installed</string>
+    <string name="toast_press_again_to_exit">Press Again to Exit</string>
+    <string name="calendarutil_time_1">Newest</string>
+    <string name="calendarutil_time_2">Minutes Ago</string>
+    <string name="calendarutil_time_3">Hours Ago</string>
+    <string name="calendarutil_time_4">Yesterday</string>
+    <string name="calendarutil_time_5">Days Ago</string>
+    <string name="calendarutil_time_6">Days Ago</string>
+    <string name="details_lv_1">(All articles derived from third-party source, therefore the views expressed in the articles do not represent Berkin. If there is any issues regarding to legal and ethics,&#160;</string>
+    <string name="details_lv_link">please contact us</string>
+    <string name="details_lv_2">Related News</string>
+    <string name="news_detail_related_tag">Related Tag</string>
+    <string name="details_lv_3">Related Comment</string>
+    <string name="details_lv_4">View Source</string>
+    <string name="details_lv_5">Find Other Categories</string>
+    <string name="sgin_time">Login From: </string>
+    <string name="load_more_loading">Loading…</string>
+    <string name="reply_share">Share on Facebook</string>
+    <string name="reply_comment">Reply Comment</string>
+    <string name="edit_my_colum">My Categories</string>
+    <string name="edit_other_colum">Other Categories</string>
+    <string name="update_no_version">Newest Version</string>
+    <string name="feed_ok">Feedback Success</string>
+    <string name="feed_fail">Feedback Failed</string>
+    <string name="editcolumn_edit">Edit</string>
+    <string name="editcolumn_ok">Success</string>
+    <string name="update_counts">Newest Article %1$d</string>
+    <string name="click_here_to_refresh">Click Here to Refresh</string>
+    <!--发现%1$d条更新-->
+    <string name="delete">Delete</string>
+    <string name="setting_skin">Setting Theme</string>
+    <!-- main menu -->
+    <string name="main_menu0_text">Home</string>
+    <string name="main_menu1_text">Search</string>
+    <string name="main_menu2_text">Me</string>
+    <string name="search">Searching&#8230;</string>
+    <string name="recently_read">Recently Read</string>
+    <!--搜索关键词-->
+    <string name="search_keyword">Input the Categories You Like</string>
+    <string name="search_tips">Input Keyword</string>
+    <string name="discovery_name">Search</string>
+    <string name="classify_name">Categories</string>
+    <string name="discovery_follow">Follow</string>
+    <string name="discovery_followed">Option</string>
+    <string name="follow_num">Reader</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="day_mode">Normal Mode</string>
+    <string name="look_over">Look Over</string>
+    <string name="default_county">Indonesia</string>
+    <string name="welcome_to_comment">Welcome to Comment</string>
+    <string name="tag_followed">Success, News Will Appear in Front Page</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="click_refresh_btn_tv">Click to Refresh</string>
+    <string name="begin_now">Begin Now</string>
+    <string name="link_facebook">Start Your Wonderful Reading Experiences with Berkin</string>
+    <string name="select_country">Select country or region</string>
+    <string name="gcm_defaultSenderId">388926632168</string>
+    <string name="new_version_title">发现新版本%1$s</string>Versi Baru Tersedia =  New Version Available
+    <string name="upgrade_title">点火升级</string>
+    <string name="default_type">eyJkYXRhIjpbeyJ0aWQiOiIxMzAiLCJzb3J0X29yZGVyIjoiNSIsImNubmFtZSI6IkJlcml0YSBVdGFtYSIsImRlZmF1bHRfc2hvdyI6IjEifSx7InRpZCI6IjE1MCIsInNvcnRfb3JkZXIiOiIxMCIsImNubmFtZSI6IlNlbGVicml0aSIsImRlZmF1bHRfc2hvdyI6IjEifSx7InRpZCI6IjEyOCIsInNvcnRfb3JkZXIiOiIxNSIsImNubmFtZSI6IkJvbGEiLCJkZWZhdWx0X3Nob3ciOiIxIn0seyJ0aWQiOiIxMTkiLCJzb3J0X29yZGVyIjoiMjAiLCJjbm5hbWUiOiJFa29ub21pIiwiZGVmYXVsdF9zaG93IjoiMCJ9LHsidGlkIjoiMTI5Iiwic29ydF9vcmRlciI6IjI1IiwiY25uYW1lIjoiT3RvbW90aWYiLCJkZWZhdWx0X3Nob3ciOiIwIn0seyJ0aWQiOiIxMjEiLCJzb3J0X29yZGVyIjoiMzAiLCJjbm5hbWUiOiJUZWtub2xvZ2kiLCJkZWZhdWx0X3Nob3ciOiIxIn0seyJ0aWQiOiIxNTIiLCJzb3J0X29yZGVyIjoiMzUiLCJjbm5hbWUiOiJTZXJiYS1TZXJiaSIsImRlZmF1bHRfc2hvdyI6IjEifSx7InRpZCI6IjEyMyIsInNvcnRfb3JkZXIiOiI0MCIsImNubmFtZSI6IkludGVybmFzaW9uYWwiLCJkZWZhdWx0X3Nob3ciOiIwIn0seyJ0aWQiOiIxMzciLCJzb3J0X29yZGVyIjoiNDUiLCJjbm5hbWUiOiJQYXJpd2lzYXRhIiwiZGVmYXVsdF9zaG93IjoiMCJ9LHsidGlkIjoiMTIyIiwic29ydF9vcmRlciI6IjUwIiwiY25uYW1lIjoiS2VzZWhhdGFuIiwiZGVmYXVsdF9zaG93IjoiMSJ9LHsidGlkIjoiMTM5Iiwic29ydF9vcmRlciI6IjU1IiwiY25uYW1lIjoiR2F5YSAmIEtlY2FudGlrYW4iLCJkZWZhdWx0X3Nob3ciOiIxIn0seyJ0aWQiOiIxMjQiLCJzb3J0X29yZGVyIjoiNjAiLCJjbm5hbWUiOiJOYXNpb25hbCIsImRlZmF1bHRfc2hvdyI6IjEifSx7InRpZCI6IjEyNiIsInNvcnRfb3JkZXIiOiI2NSIsImNubmFtZSI6IkVkdWthc2kiLCJkZWZhdWx0X3Nob3ciOiIwIn0seyJ0aWQiOiIxMzgiLCJzb3J0X29yZGVyIjoiNzAiLCJjbm5hbWUiOiJLdWxpbmVyIiwiZGVmYXVsdF9zaG93IjoiMSJ9LHsidGlkIjoiMTQxIiwic29ydF9vcmRlciI6Ijc1IiwiY25uYW1lIjoiRmlsbSIsImRlZmF1bHRfc2hvdyI6IjAifSx7InRpZCI6IjE0MiIsInNvcnRfb3JkZXIiOiI4MCIsImNubmFtZSI6Ik11c2lrIiwiZGVmYXVsdF9zaG93IjoiMCJ9LHsidGlkIjoiMTQ1Iiwic29ydF9vcmRlciI6Ijg1IiwiY25uYW1lIjoiTWV0cm9wb2xpdGFuIiwiZGVmYXVsdF9zaG93IjoiMCJ9LHsidGlkIjoiMTIwIiwic29ydF9vcmRlciI6Ijg3IiwiY25uYW1lIjoiT2xhaHJhZ2EiLCJkZWZhdWx0X3Nob3ciOiIxIn0seyJ0aWQiOiIxMzYiLCJzb3J0X29yZGVyIjoiOTAiLCJjbm5hbWUiOiJSZWdpb25hbCIsImRlZmF1bHRfc2hvdyI6IjAifSx7InRpZCI6IjE0NyIsInNvcnRfb3JkZXIiOiI5MiIsImNubmFtZSI6IklidSAmIEFuYWsiLCJkZWZhdWx0X3Nob3ciOiIwIn0seyJ0aWQiOiIxNDMiLCJzb3J0X29yZGVyIjoiOTMiLCJjbm5hbWUiOiJQc2lrb2xvZ2kiLCJkZWZhdWx0X3Nob3ciOiIwIn0seyJ0aWQiOiIxNDAiLCJzb3J0X29yZGVyIjoiOTQiLCJjbm5hbWUiOiJCdWRheWEgJiBTZWphcmFoIiwiZGVmYXVsdF9zaG93IjoiMCJ9LHsidGlkIjoiMTM1Iiwic29ydF9vcmRlciI6Ijk2IiwiY25uYW1lIjoiUHJvcGVydGkiLCJkZWZhdWx0X3Nob3ciOiIwIn0seyJ0aWQiOiIxNDQiLCJzb3J0X29yZGVyIjoiOTgiLCJjbm5hbWUiOiJUaXBzICYgVHJpayIsImRlZmF1bHRfc2hvdyI6IjAifSx7InRpZCI6IjE1OCIsInNvcnRfb3JkZXIiOiIxMDAiLCJjbm5hbWUiOiJPcGluaSIsImRlZmF1bHRfc2hvdyI6IjAifSx7InRpZCI6IjE1NyIsInNvcnRfb3JkZXIiOiIxMDUiLCJjbm5hbWUiOiJNYW5nQW5pbWUgR2FtZSIsImRlZmF1bHRfc2hvdyI6IjAifSx7InRpZCI6IjE1OSIsInNvcnRfb3JkZXIiOiIxMjMiLCJjbm5hbWUiOiJTZWtzIiwiZGVmYXVsdF9zaG93IjoiMCJ9XSwiZWNob3N0ciI6bnVsbCwibXNnIjoib2siLCJjb2RlIjoyMDB9</string>
+</resources>

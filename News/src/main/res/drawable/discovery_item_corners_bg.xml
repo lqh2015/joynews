@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <!-- 点击效果-->
+            <stroke android:width="0.5dip" android:color="#42a5f5" />
+            <solid android:color="#42a5f5" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <!--默认效果-->
+            <stroke android:width="0.5dip" android:color="#90caf9" />
+            <solid android:color="#90caf9" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+</selector>

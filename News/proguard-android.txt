@@ -1,0 +1,160 @@
+-ignorewarnings
+-dontoptimize
+-dontwarn
+
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+-dontoptimize
+-dontpreverify
+
+-keepattributes Signature
+
+# This is due to ObjectAnimator using reflection to access get/sets
+-keep class com.balysv.materialripple.**{ *; }
+-keep class com.color.**{ *; }
+-keep class com.daimajia.numberprogressbar.**{ *; }
+-keep class com.faizmalkani.floatingactionbutton.**{ *; }
+-keep class com.mingle.widget.LoadingView{ *; }
+-keep class com.sithagi.countrycodepicker.**{ *; }
+-keep class me.nereo.multi_image_selector.**{ *; }
+
+#Event
+-keep class * extends com.news.update.Event
+
+#DB Event
+-keep class com.hzpd.modle.** { *; }
+
+# Fastjson
+-keep class com.alibaba.fastjson.**{
+    *;
+}
+
+# Facebook
+-keep class com.facebook.**{
+     *;
+}
+
+# OkHttp
+-keep class com.squareup.okhttp.** { *; }
+-keep interface com.squareup.okhttp.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
+
+-keep class com.hzpd.utils.** { *; }
+
+# GreenDao
+-keep class de.greenrobot.dao.** {*;}
+-keepclassmembers class * extends de.greenrobot.dao.AbstractDao {
+    public static java.lang.String TABLENAME;
+}
+-keep class **$Properties
+
+#ImageLoader
+-keep class com.nostra13.universalimageloader.** { *; }
+-keepclassmembers class com.nostra13.universalimageloader.** {*;}
+
+#nineoldandroids
+-keep class com.nineoldandroids.animation.** { *; }
+-keep interface com.nineoldandroids.animation.** { *; }
+-keep class com.nineoldandroids.view.** { *; }
+-keep interface com.nineoldandroids.view.** { *; }
+
+# Jpush
+-dontwarn cn.jpush.**
+-keep class cn.jpush.** { *; }
+-keep class **.R$* {*;}
+-keep class **.R{*;}
+-dontwarn **.R$*
+-keep class m.framework.**{*;}
+
+# EventBus混淆配置
+-keepclassmembers class ** {
+    public void onEvent*(**);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+# <<<
+
+# >>> 友盟统计分析混淆配置
+-keepclassmembers class * {
+   public <init>(org.json.JSONObject);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+# <<<
+
+# >>> 谷歌混淆配置
+-keep public class com.google.android.gms.** {
+    public *;
+}
+# <<<
+
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Fragment
+-keep public class * extends android.support.v4.app.Fragment
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class com.android.vending.licensing.ILicensingService
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keepattributes *Annotation*
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclassmembers public class * extends android.view.View {
+   void set*(***);
+   *** get*();
+}
+
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keepclassmembers class **.R$* {
+    public static <fields>;
+}
+

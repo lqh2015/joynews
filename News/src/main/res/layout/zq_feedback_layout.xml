@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?zq_feedback_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?zq_feedback_color"
+        android:orientation="vertical">
+
+        <include layout="@layout/stitle_layout" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/feedback_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/base_edittext_drawable">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/zq_feedback_et_content"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120.0dip"
+                            android:background="@android:color/transparent"
+                            android:gravity="top"
+                            android:hint="@string/hint_feedback_at_content"
+                            android:maxLength="500"
+                            android:scrollbarStyle="outsideOverlay"
+                            android:scrollbarThumbVertical="@drawable/base_list_scrollbar_handle"
+                            android:scrollbars="vertical"
+                            android:textCursorDrawable="@null"
+                            android:shadowColor="@null"
+                            android:textColor="?feedback_edittext_tv"
+                            android:singleLine="false"
+                            android:textColorHint="#bababa"
+                            android:textSize="16.0sp" />
+                    </RelativeLayout>
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="?zq_feedetbg_shape_bg"
+                        android:hint="@string/hint_feedback_at_email"
+                        android:padding="5dp"
+                        android:textColor="?zq_feedback_edit_color"
+                        android:textColorHint="?zq_feedback_edit_color"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/base_edittext_drawable">
+
+                        <EditText
+                            android:id="@+id/zq_feedback_et_email"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/feedback_text"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_feedback_at_email"
+                            android:saveEnabled="true"
+                            android:textColor="?feedback_edittext_tv"
+                            android:textCursorDrawable="@null"
+                            android:textColorHint="#bababa"
+                            android:textSize="16.0sp" />
+                        <!--android:textColor="#0e0e0e"-->
+
+                        <TextView
+                            android:id="@+id/feedback_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="Email:  "
+                            android:textColor="?feedback_email_tv"
+                            android:textSize="14.0sp" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/zq_feedback_btn_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:background="@drawable/feed_back_bg_btn"
+                        android:text="@string/prompt_submit"
+                        android:textColor="?zq_feedback_btn_color"
+                        android:textSize="18sp"
+                         />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/cover_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/add_transparency"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:id="@+id/app_progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?app_progress_bar_bg"
+                    android:visibility="gone">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar1"
+                        style="@style/JoyNews.Widget.ProgressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+
+                </FrameLayout>
+            </FrameLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</FrameLayout>

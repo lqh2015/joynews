@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--提示-->
+    <string name="tips">Pemberitahuan</string>
+    <!--设置-->
+    <string name="setting">Pengaturan</string>
+    <!--确定-->
+    <string name="sure">Yakin</string>
+    <!--取消-->
+    <string name="cancel">Batal</string>
+    <!--安装-->
+    <string name="install">Pasang</string>
+    <!--狠心拒绝-->
+    <string name="reject">Nanti Saja</string>
+    <!--土豪勿扰-->
+    <string name="bye">Abaikan</string>
+    <!--现在切换-->
+    <string name="change">Aktifkan</string>
+    <!--去评价-->
+    <string name="rate">Beri Bintang</string>
+    <!--当前没有网络，无法浏览新闻，是否开启网络？-->
+    <string name="tip_offline">Tidak ada koneksi. Periksa kembali koneksi Anda.</string>
+    <!--您已切换到移动网络, 建议切换到省流量模式(不下载图片)? -->
+    <string name="tip_mobile">Anda berada pada mode standar, pindah ke mode hemat kuota (tanpa gambar)? </string>
+    <!--感谢您的使用! 如果喜欢我们, 请给我们五星评价。 -->
+    <string name="tip_rate">Terima kasih telah menggunakan Berkin. Jangan lupa berikan bintang 5 ya...</string>
+
+    <string name="install_ok">Berkin Telah Berhasil Dipasang</string>
+
+    <!--已切换到省流量模式-->
+    <string name="switch_save_flow">Telah Diubah ke Mode Hemat Kuota</string>
+    <!--已切换到Standar Mode-->
+    <string name="switch_normal">Telah Diubah ke Mode Standar</string>
+
+    <!--当前是WIFI网络，不消耗流量，已自动切换到Standar Mode-->
+    <string name="switch_wifi">WiFi Terdeteksi, Otomatis Berubah ke Mode Standar</string>
+
+    <string name="install_tips">Suka? Langsung pasang ya!</string>
+
+    <string name="error_delete">Berita Dihapus</string>
+    <string name="page_save_mode">Hemat Kuota</string>
+    <string name="page_best_mode">Standar</string>
+
+    <!-- 翻译 -->
+    <!-- 本地更新 -->
+    <string name="update_counts_head">Telah Diperbarui</string>
+    <string name="local_update_now">Perbarui</string>
+    <string name="local_update_later">Nanti</string>
+    <string name="local_update_install">Pasang Sekarang</string>
+    <string name="local_downloading_ticker">Perbarui Link App</string>
+    <string name="local_downloading">Sedang Perbarui… %1$s </string>
+
+    <string name="local_update_ticker">Unduh Latar</string>
+    <string name="local_update_done_ticker">Berhasil Perbarui</string>
+    <string name="app_notify_title">Berkin - Berita Terkini</string>
+    <string name="app_notify_content">Mengumpulkan Berita dari Sumber Terpercaya. Berita Terkini, Dari Anda, Untuk Anda, Milik Anda.</string>
+
+    <string name="recommend">Rekomendasi</string>
+    <string name="comment_ok">Komen Berhasil</string>
+    <string name="search_none">"Maaf, Tidak Ditemukan “%1$s” yet"</string>
+    <string name="language">Bahasa</string>
+    <!-- 搜索页面 -->
+    <string name="search_empty_content">Cari Berita</string>
+    <string name="search_key_head">Cari Terpopuler</string>
+    <string name="search_history_head">Cari Histori</string>
+    <string name="search_history_clear">Hapus Histori</string>
+    <!--
+		"     (&#34; 或 &quot;)
+		'     (&#39; 或 &apos;)
+		&     (&#38; 或 &amp;)
+		lt(<) (&#60; 或 &lt;)
+		gt(>) (&#62; 或 &gt;)
+
+    -->
+    <string name="app_name">Berkin</string>
+
+    <string name="video_layout_loading">Memuat Data…</string>
+
+    <string name="folder_all">Semua Gambar</string>
+    <string name="preview">Lihat</string>
+    <string name="msg_no_camera">Tidak Ada Kamera</string>
+    <string name="msg_amount_limit">Mencapai Jumlah Maksimum Seleksi</string>
+
+    <string name="about_us">    </string>
+    <string name="settings_font">Tulisan</string>
+    <string name="settings_option_font_large">Besar</string>
+    <string name="settings_option_font_medium">Sedang</string>
+    <string name="settings_option_font_small">Kecil</string>
+    <string name="settings_push">Notifikasi</string>
+    <string name="settings_clear_cache">Bersihkan Histori</string>
+    <string name="settings_check_update">Cek Update</string>
+    <string name="settings_feedback">Saran</string>
+    <string name="settings_about_us">Tentang Kami</string>
+    <string name="title_more_column">Tambah Kolom</string>
+
+    <string name="title_user_register">Daftar</string>
+    <string name="title_activity_personal_award">Informasi Pribadi</string>
+    <string name="title_activity_vote_detail">Detil Opsi Voting</string>
+    <string name="title_activity_register">Aktivitas Pendaftaran</string>
+    <string name="title_activity_vote">Aktivitas Voting</string>
+    <string name="title_activity_award">Hadiah Aktivitas</string>
+    <string name="title_activity_detail">Detil Aktivitas</string>
+    <string name="title_settings">Pengaturan</string>
+    <string name="title_login">Masuk</string>
+    <string name="title_about_us">>Tentang Kami</string>
+    <string name="login">Masuk</string>
+
+
+    <string name="prompt_votes">%1$d voting</string>
+    <string name="prompt_column_subscribe">Kolom Langganan</string>
+    <string name="prompt_my_msg">Pesan</string>
+    <string name="prompt_clear_cache_dialog_title">Hapus Cache</string>
+    <string name="prompt_clear_cache_dialog_msg">Hapus Seluruh Memori Cache</string>
+    <string name="prompt_subject">Topik Spesial</string>
+    <string name="prompt_feedback">Saran</string>
+    <string name="prompt_start_lottery">Mengundi</string>
+    <string name="prompt_seconds">%1$d Detik</string>
+    <string name="prompt_get_again">Pemulihan</string>
+    <string name="prompt_find_password">Pemulihan Kata Sandi</string>
+    <string name="prompt_change_password">Ubah Kata Sandi</string>
+
+    <string name="select_country">Pilih negara atau wilayah</string>
+    <string name="prompt_take_photo">Ambil Gambar</string>
+    <string name="prompt_male">Pria</string>
+    <string name="prompt_female">Wanita</string>
+    <string name="prompt_keep_secret"> Rahasia</string>
+    <string name="prompt_yesterday">Kemarin</string>
+    <string name="prompt_today">Hari Ini</string>
+
+    <string name="prompt_accept_award">Ambil Hadiah</string>
+    <string name="prompt_real_name">Nama Asli</string>
+    <string name="prompt_phone_number">Nomor Telepon</string>
+    <string name="prompt_submit">Kirim</string>
+    <string name="prompt_apply">Daftar</string>
+    <string name="prompt_apply_on_cover">Letakkan di Depan</string>
+    <string name="prompt_vote">Voting</string>
+    <string name="prompt_lottery">Cabut Undi</string>
+    <string name="prompt_share">Berbagi</string>
+    <string name="prompt_auditing">Memeriksa</string>
+    <string name="prompt_click_to_add_or_cancel">Tekan untuk Tambah atau Batal</string>
+    <string name="prompt_get_captcha">Dapatkan Kode Unik</string>
+    <string name="prompt_verify_captcha">Verifikasi</string>
+    <string name="prompt_register_with_space">Daftar</string>
+    <string name="prompt_write_comment">Tulis Komentar</string>
+    <string name="prompt_image">Gambar</string>
+    <string name="prompt_all_images">Semua Gambar</string>
+    <string name="prompt_image_plural">%1$d gambar</string>
+    <string name="prompt_preview">Lihat</string>
+    <string name="prompt_complete">Selesai</string>
+    <string name="prompt_complete_with_number">Selesai(%1$d/%2$d)</string>
+    <string name="prompt_forget_password">Lupa Kata Sandi</string>
+    <string name="prompt_has_no_account">Tidak Memiliki Akun?</string>
+    <string name="prompt_register">Daftar</string>
+    <string name="prompt_nickname">Nama Samaran:</string>
+    <string name="prompt_sex">Jenis Kelamin:</string>
+    <string name="prompt_i_has_comment">Telah Komentar</string>
+    <string name="prompt_logout">Keluar</string>
+    <string name="prompt_vote_rule">Aturan Voting</string>
+
+    <string name="prompt_send">Kirim</string>
+    <string name="prompt_login_now">Masuk Sekarang</string>
+    <string name="prompt_login_facebook">Sambungkan ke Facebook</string>
+    <string name="prompt_collect">Favorit</string>
+    <string name="hint_input_new_nickname">Masukkan Nama Baru</string>
+    <string name="hint_input_phone"> Telepon atau Selular </string>
+    <string name="hint_msm_captcha"> Kode Unik</string>
+    <string name="hint_phone_number"> Masukkan Nomor Telepon </string>
+    <string name="hint_sex">Pria atau Wanita</string>
+    <string name="hint_date">Contoh: 2014-12-16</string>
+    <string name="hint_award_send_address">Alamat</string>
+    <string name="hint_please_input_password">Ketik Kata Sandi</string>
+    <string name="hint_please_input_password_again"> Ketik Ulang Kata Sandi </string>
+    <string name="hint_input_new_password">Masukkan Kata Sandi Baru</string>
+    <string name="hint_confirm_password">Konfirmasi Kata Sandi Baru</string>
+    <string name="hint_password">Kata Sandi</string>
+    <string name="hint_feedback_at_content">Komentar untuk Berkin</string>
+    <string name="hint_feedback_at_email">Tinggalkan Alamat Email Anda</string>
+    <string name="pull_to_refresh_reached_end">Artikel Terbaru Ditampilkan</string>
+    <string name="comment_mine">Komentarku</string>
+    <string name="comment">Komentar</string>
+    <string name="toast_server_error">Jaringan Gagal</string>
+    <string name="toast_server_no_response">Tidak Ada Respon Jaringan</string>
+    <string name="toast_cannot_connect_to_server">Tidak Terhubung ke Jaringan</string>
+    <string name="toast_cannot_connect_network">Koneksi Gagal</string>
+    <string name="toast_check_network">Periksa Kembali Jaringan Anda</string>
+    <string name="toast_collect_success">Berhasil</string>
+    <string name="toast_collect_failed">Gagal </string>
+    <string name="toast_collect_cancelled">Batal </string>
+    <string name="toast_delete_success">Berhasil Menghapus</string>
+    <string name="toast_delete_failed">Gagal Menghapus</string>
+    <string name="toast_no_sdcard">Tidak Ada SD Card</string>
+    <string name="toast_image_format_is_wrong">Format Gambar Salah</string>
+    <string name="toast_phone_format_is_wrong">Format Telepon Salah</string>
+    <string name="toast_email_format_is_wrong">Format Email Salah</string>
+    <string name="toast_date_format_is_wrong">Format Tanggal Salah, Gunakan Format yyyy-mm-dd</string>
+    <string name="toast_qq_format_is_wrong">Format QQ Salah</string>
+    <string name="toast_start_download">Mulai Unduh</string>
+    <string name="toast_downloaded_at">Unduh Ke?</string>
+    <string name="toast_download_failed">Gagal Unduh</string>
+    <string name="toast_bind_success">Kunci Sukses</string>
+    <string name="toast_bind_failed"> Kunci Gagal</string>
+    <string name="toast_cache_failed"> Cache Gagal, Harap Buka Kembali </string>
+    <string name="toast_xx_cannot_be_empty">%1$s Tidak Boleh Kosong</string>
+    <string name="toast_feedback_cannot_be_short">Jumlah Kata Tidak Cukup</string>
+    <string name="toast_email_cannot_be_error">Alamat Email Salah</string>
+    <string name="toast_input_cannot_be_empty">Tidak Boleh Kosong</string>
+    <string name="toast_fail_to_comment">Komentar Gagal</string>
+    <string name="toast_activity_not_started"> Belum Mulai Beraktivitas</string>
+    <string name="toast_take_award">Selamat! Anda Mendapatkan %1$s\n Harap Tukarkan</string>
+    <string name="toast_no_award">Anda Belum Beruntung</string>
+    <string name="toast_award">Hadiah:%1$s</string>
+    <string name="toast_apply_success">Daftar Berhasil</string>
+    <string name="toast_input_number">Masukkan Nomor</string>
+    <string name="toast_no_data_now">Tidak Ada Data</string>
+    <string name="toast_captcha_is_wrong">Kode Unik Salah</string>
+    <string name="toast_captcha_get_success">Kode Unik Berhasil</string>
+    <string name="toast_captcha_get_failed">Kode Unik Gagal</string>
+    <string name="toast_input_phone">Ketik Nomor Telepon</string>
+    <string name="toast_phone_number_count_error">Nomor Telepon Salah</string>
+    <string name="toast_verify_success">Verifikasi Berhasil</string>
+    <string name="toast_app_not_installed">Gagal Pasang Aplikasi</string>
+    <string name="toast_press_again_to_exit">Tekan Sekali Lagi untuk Keluar</string>
+    <string name="calendarutil_time_1">Terkini</string>
+    <string name="calendarutil_time_2">Menit Lalu</string>
+    <string name="calendarutil_time_3">Jam Lalu</string>
+    <string name="calendarutil_time_4">1Kemarin</string>
+    <string name="calendarutil_time_5">2Hari Lalu</string>
+    <string name="calendarutil_time_6">Hari Lalu</string>
+    <string name="details_lv_1">(Artikel didapat dari sumber pihak ketiga, tidak mewakili pandangan apapun dari Berkin. Jika terdapat masalah terkait legalitas,&#160;</string>
+    <string name="details_lv_link">silahkan menghubungi kami</string>
+    <string name="details_lv_2">Berita Terkait</string>
+    <string name="news_detail_related_tag">Tag Terkait</string>
+    <string name="details_lv_3">Komentar Terkait</string>
+    <string name="details_lv_4">Lihat Sumber</string>
+    <string name="details_lv_5">Lihat Kategori Lain</string>
+    <string name="sgin_time">Terdaftar Dari: </string>
+    <string name="load_more_loading">Sedang Memuat…</string>
+    <string name="reply_share">Bagikan di Facebook</string>
+    <string name="reply_comment">Balas Komentar</string>
+    <string name="edit_my_colum">Bacaan Saya</string>
+    <string name="edit_other_colum">Tambahkan</string>
+    <string name="update_no_version">Versi Terbaru Saat Ini</string>
+    <string name="feed_ok">Laporan Berhasil</string>
+    <string name="feed_fail">Laporan Gagal</string>
+    <string name="editcolumn_edit">Ubah</string>
+    <string name="editcolumn_ok">Berhasil</string>
+    <string name="update_counts">Berita Terbaru %1$d Artikel</string>
+    <string name="click_here_to_refresh">Jaringan Internet Bermasalah!</string>
+    <!--发现%1$d条更新-->
+    <string name="delete">Hapus</string>
+    <string name="setting_skin">Warna Tema</string>
+    <!-- main menu -->
+    <string name="main_menu0_text">Beranda</string>
+    <string name="main_menu1_text">Temukan</string>
+    <string name="main_menu2_text">Saya</string>
+    <string name="search">Cari&#8230;</string>
+    <string name="recently_read">Terakhir Dibaca</string>
+    <!--搜索关键词-->
+    <string name="search_keyword">Ketik Kategori yang Anda Inginkan</string>
+    <string name="search_tips">Masukkan Kata Kunci</string>
+    <string name="discovery_name">Temukan</string>
+    <string name="classify_name">Kategori</string>
+    <string name="discovery_follow">Pilih</string>
+    <string name="discovery_followed">Pilihan</string>
+    <string name="follow_num">Pembaca</string>
+    <string name="night_mode">Malam</string>
+    <string name="day_mode">Normal</string>
+    <string name="look_over">Lihat</string>
+    <string name="default_county">Indonesia</string>
+    <string name="welcome_to_comment">Berikan Pendapat Anda</string>
+    <string name="tag_followed">Pilihan Berhasil, Artikel Ada di Halaman Depan</string>
+    <string name="rate_us">Beri Bintang</string>
+    <string name="click_refresh_btn_tv">Unduh Kembali</string>
+    <string name="begin_now">Mulai Sekarang</string>
+    <string name="link_facebook">Pada Hari ini Kau Kembali Melukiskan Kisah yang Indah</string>
+
+    <string name="gcm_defaultSenderId">388926632168</string>
+    <string name="new_version_title">发现新版本%1$s</string>
+    <string name="upgrade_title">点火升级</string>
+    <string name="default_type">eyJkYXRhIjpbeyJ0aWQiOiIxMzAiLCJzb3J0X29yZGVyIjoiNSIsImNubmFtZSI6IkJlcml0YSBVdGFtYSIsImRlZmF1bHRfc2hvdyI6IjEifSx7InRpZCI6IjE1MCIsInNvcnRfb3JkZXIiOiIxMCIsImNubmFtZSI6IlNlbGVicml0aSIsImRlZmF1bHRfc2hvdyI6IjEifSx7InRpZCI6IjEyOCIsInNvcnRfb3JkZXIiOiIxNSIsImNubmFtZSI6IkJvbGEiLCJkZWZhdWx0X3Nob3ciOiIxIn0seyJ0aWQiOiIxMTkiLCJzb3J0X29yZGVyIjoiMjAiLCJjbm5hbWUiOiJFa29ub21pIiwiZGVmYXVsdF9zaG93IjoiMCJ9LHsidGlkIjoiMTI5Iiwic29ydF9vcmRlciI6IjI1IiwiY25uYW1lIjoiT3RvbW90aWYiLCJkZWZhdWx0X3Nob3ciOiIwIn0seyJ0aWQiOiIxMjEiLCJzb3J0X29yZGVyIjoiMzAiLCJjbm5hbWUiOiJUZWtub2xvZ2kiLCJkZWZhdWx0X3Nob3ciOiIxIn0seyJ0aWQiOiIxNTIiLCJzb3J0X29yZGVyIjoiMzUiLCJjbm5hbWUiOiJTZXJiYS1TZXJiaSIsImRlZmF1bHRfc2hvdyI6IjEifSx7InRpZCI6IjEyMyIsInNvcnRfb3JkZXIiOiI0MCIsImNubmFtZSI6IkludGVybmFzaW9uYWwiLCJkZWZhdWx0X3Nob3ciOiIwIn0seyJ0aWQiOiIxMzciLCJzb3J0X29yZGVyIjoiNDUiLCJjbm5hbWUiOiJQYXJpd2lzYXRhIiwiZGVmYXVsdF9zaG93IjoiMCJ9LHsidGlkIjoiMTIyIiwic29ydF9vcmRlciI6IjUwIiwiY25uYW1lIjoiS2VzZWhhdGFuIiwiZGVmYXVsdF9zaG93IjoiMSJ9LHsidGlkIjoiMTM5Iiwic29ydF9vcmRlciI6IjU1IiwiY25uYW1lIjoiR2F5YSAmIEtlY2FudGlrYW4iLCJkZWZhdWx0X3Nob3ciOiIxIn0seyJ0aWQiOiIxMjQiLCJzb3J0X29yZGVyIjoiNjAiLCJjbm5hbWUiOiJOYXNpb25hbCIsImRlZmF1bHRfc2hvdyI6IjEifSx7InRpZCI6IjEyNiIsInNvcnRfb3JkZXIiOiI2NSIsImNubmFtZSI6IkVkdWthc2kiLCJkZWZhdWx0X3Nob3ciOiIwIn0seyJ0aWQiOiIxMzgiLCJzb3J0X29yZGVyIjoiNzAiLCJjbm5hbWUiOiJLdWxpbmVyIiwiZGVmYXVsdF9zaG93IjoiMSJ9LHsidGlkIjoiMTQxIiwic29ydF9vcmRlciI6Ijc1IiwiY25uYW1lIjoiRmlsbSIsImRlZmF1bHRfc2hvdyI6IjAifSx7InRpZCI6IjE0MiIsInNvcnRfb3JkZXIiOiI4MCIsImNubmFtZSI6Ik11c2lrIiwiZGVmYXVsdF9zaG93IjoiMCJ9LHsidGlkIjoiMTQ1Iiwic29ydF9vcmRlciI6Ijg1IiwiY25uYW1lIjoiTWV0cm9wb2xpdGFuIiwiZGVmYXVsdF9zaG93IjoiMCJ9LHsidGlkIjoiMTIwIiwic29ydF9vcmRlciI6Ijg3IiwiY25uYW1lIjoiT2xhaHJhZ2EiLCJkZWZhdWx0X3Nob3ciOiIxIn0seyJ0aWQiOiIxMzYiLCJzb3J0X29yZGVyIjoiOTAiLCJjbm5hbWUiOiJSZWdpb25hbCIsImRlZmF1bHRfc2hvdyI6IjAifSx7InRpZCI6IjE0NyIsInNvcnRfb3JkZXIiOiI5MiIsImNubmFtZSI6IklidSAmIEFuYWsiLCJkZWZhdWx0X3Nob3ciOiIwIn0seyJ0aWQiOiIxNDMiLCJzb3J0X29yZGVyIjoiOTMiLCJjbm5hbWUiOiJQc2lrb2xvZ2kiLCJkZWZhdWx0X3Nob3ciOiIwIn0seyJ0aWQiOiIxNDAiLCJzb3J0X29yZGVyIjoiOTQiLCJjbm5hbWUiOiJCdWRheWEgJiBTZWphcmFoIiwiZGVmYXVsdF9zaG93IjoiMCJ9LHsidGlkIjoiMTM1Iiwic29ydF9vcmRlciI6Ijk2IiwiY25uYW1lIjoiUHJvcGVydGkiLCJkZWZhdWx0X3Nob3ciOiIwIn0seyJ0aWQiOiIxNDQiLCJzb3J0X29yZGVyIjoiOTgiLCJjbm5hbWUiOiJUaXBzICYgVHJpayIsImRlZmF1bHRfc2hvdyI6IjAifSx7InRpZCI6IjE1OCIsInNvcnRfb3JkZXIiOiIxMDAiLCJjbm5hbWUiOiJPcGluaSIsImRlZmF1bHRfc2hvdyI6IjAifSx7InRpZCI6IjE1NyIsInNvcnRfb3JkZXIiOiIxMDUiLCJjbm5hbWUiOiJNYW5nQW5pbWUgR2FtZSIsImRlZmF1bHRfc2hvdyI6IjAifSx7InRpZCI6IjE1OSIsInNvcnRfb3JkZXIiOiIxMjMiLCJjbm5hbWUiOiJTZWtzIiwiZGVmYXVsdF9zaG93IjoiMCJ9XSwiZWNob3N0ciI6bnVsbCwibXNnIjoib2siLCJjb2RlIjoyMDB9</string>
+</resources>

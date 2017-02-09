@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dislike_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dislike_tv"
+            android:layout_width="100.0dip"
+            android:layout_height="30.0dip"
+            android:background="@drawable/dislike_title_btn_background_selector"
+            android:gravity="center"
+            android:text="Tidak Tertarik"
+            android:textColor="#ffffffff"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

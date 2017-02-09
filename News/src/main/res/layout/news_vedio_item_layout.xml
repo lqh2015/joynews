@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?news_item_btn_selector"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/news_3_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/list_item_padding_tb"
+        android:paddingLeft="@dimen/list_item_padding"
+        android:paddingRight="@dimen/list_item_padding"
+        android:paddingTop="@dimen/list_item_padding_tb">
+
+        <jcvideoplayer_lib.JCVideoPlayerStandard
+            android:id="@+id/videoplayer"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:orientation="vertical"/>
+
+        <!-- 标签栏-->
+        <include
+            layout="@layout/news_desc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/list_item_padding_tb" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginLeft="@dimen/list_item_padding"
+        android:layout_marginRight="@dimen/list_item_padding"
+        android:background="?news_item_line_color" />
+</LinearLayout>
+

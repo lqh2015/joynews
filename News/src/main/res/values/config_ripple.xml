@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- rippleColor -->
+    <color name="ripple_color_bottom_tab">#9dc02e</color>
+    <color name="ripple_color_banner_item">#ff0000</color>
+    <color name="ripple_color_game_gift_list_item">#ff0000</color>
+    <color name="ripple_color_other_gift_item">#ff0000</color>
+    <color name="ripple_color_btn_get_gift_code">#ff0000</color>
+    <color name="ripple_color_btn_copy_gift_code">#ff0000</color>
+    <color name="ripple_color_empty_layout">#ff0000</color>
+    <color name="ripple_color_grid_item">#ff0000</color>
+    <color name="ripple_color_app_item">#ff0000</color>
+
+    <!-- rippleDimension -->
+    <dimen name="ripple_dimen_bottom_tab">3dp</dimen>
+    <dimen name="ripple_dimen_banner_item">4dp</dimen>
+    <dimen name="ripple_dimen_game_gift_list_item">4dp</dimen>
+    <dimen name="ripple_dimen_other_gift_item">4dp</dimen>
+    <dimen name="ripple_dimen_btn_get_gift_code">4dp</dimen>
+    <dimen name="ripple_dimen_btn_copy_gift_code">4dp</dimen>
+    <dimen name="ripple_dimen_empty_layout">4dp</dimen>
+    <dimen name="ripple_dimen_grid_item">4dp</dimen>
+    <dimen name="ripple_dimen_app_item">4dp</dimen>
+
+    <!-- rippleDuration-->
+    <integer name="ripple_duration_bottom_tab">400</integer>
+    <integer name="ripple_duration_banner_item">400</integer>
+    <integer name="ripple_duration_game_gift_list_item">400</integer>
+    <integer name="ripple_duration_other_gift_item">400</integer>
+    <integer name="ripple_duration_btn_get_gift_code">400</integer>
+    <integer name="ripple_duration_btn_copy_gift_code">400</integer>
+    <integer name="ripple_duration_empty_layout">400</integer>
+    <integer name="ripple_duration_grid_item">400</integer>
+    <integer name="ripple_duration_app_item">400</integer>
+
+    <!-- rippleFadeDuration-->
+    <integer name="ripple_fade_duration_bottom_tab">100</integer>
+    <integer name="ripple_fade_duration_banner_item">100</integer>
+    <integer name="ripple_fade_duration_game_gift_list_item">100</integer>
+    <integer name="ripple_fade_duration_other_gift_item">100</integer>
+    <integer name="ripple_fade_duration_btn_get_gift_code">100</integer>
+    <integer name="ripple_fade_duration_btn_copy_gift_code">100</integer>
+    <integer name="ripple_fade_duration_empty_layout">100</integer>
+    <integer name="ripple_fade_duration_grid_item">100</integer>
+    <integer name="ripple_fade_duration_app_item">100</integer>
+
+    <!-- rippleAlpha -->
+    <item name="ripple_alpha_bottom_tab" format="float" type="dimen">1.0</item>
+    <item name="ripple_alpha_banner_item" format="float" type="dimen">0.3</item>
+    <item name="ripple_alpha_game_gift_list_item" format="float" type="dimen">0.3</item>
+    <item name="ripple_alpha_other_gift_item" format="float" type="dimen">0.3</item>
+    <item name="ripple_alpha_btn_get_gift_code" format="float" type="dimen">0.3</item>
+    <item name="ripple_alpha_btn_copy_gift_code" format="float" type="dimen">0.3</item>
+    <item name="ripple_alpha_empty_layout" format="float" type="dimen">0.3</item>
+    <item name="ripple_alpha_grid_item" format="float" type="dimen">0.3</item>
+    <item name="ripple_alpha_app_item" format="float" type="dimen">0.3</item>
+
+    <!-- rippleOverlay -->
+    <bool name="ripple_overlay_bottom_tab">false</bool>
+    <bool name="ripple_overlay_banner_item">true</bool>
+    <bool name="ripple_overlay_game_gift_list_item">false</bool>
+    <bool name="ripple_overlay_other_gift_item">false</bool>
+    <bool name="ripple_overlay_btn_get_gift_code">true</bool>
+    <bool name="ripple_overlay_btn_copy_gift_code">true</bool>
+    <bool name="ripple_overlay_empty_layout">true</bool>
+    <bool name="ripple_overlay_grid_item">true</bool>
+    <bool name="ripple_overlay_app_item">true</bool>
+
+    <!-- rippleHover -->
+    <bool name="ripple_hover_bottom_tab">false</bool>
+    <bool name="ripple_hover_banner_item">false</bool>
+    <bool name="ripple_hover_game_gift_list_item">false</bool>
+    <bool name="ripple_hover_other_gift_item">false</bool>
+    <bool name="ripple_hover_btn_get_gift_code">false</bool>
+    <bool name="ripple_hover_btn_copy_gift_code">false</bool>
+    <bool name="ripple_hover_empty_layout">false</bool>
+    <bool name="ripple_hover_grid_item">false</bool>
+    <bool name="ripple_hover_app_item">false</bool>
+
+    <!-- rippleDelayClick -->
+    <bool name="ripple_delay_click_bottom_tab">true</bool>
+    <bool name="ripple_delay_click_banner_item">true</bool>
+    <bool name="ripple_delay_click_game_gift_list_item">true</bool>
+    <bool name="ripple_delay_click_other_gift_item">true</bool>
+    <bool name="ripple_delay_click_btn_get_gift_code">true</bool>
+    <bool name="ripple_delay_click_btn_copy_gift_code">true</bool>
+    <bool name="ripple_delay_click_empty_layout">true</bool>
+    <bool name="ripple_delay_click_grid_item">true</bool>
+    <bool name="ripple_delay_click_app_item">true</bool>
+
+    <!-- ripplePersistent -->
+    <bool name="ripple_persistent_bottom_tab">true</bool>
+    <bool name="ripple_persistent_banner_item">false</bool>
+    <bool name="ripple_persistent_game_gift_list_item">false</bool>
+    <bool name="ripple_persistent_other_gift_item">false</bool>
+    <bool name="ripple_persistent_btn_get_gift_code">false</bool>
+    <bool name="ripple_persistent_btn_copy_gift_code">false</bool>
+    <bool name="ripple_persistent_empty_layout">false</bool>
+    <bool name="ripple_persistent_grid_item">false</bool>
+    <bool name="ripple_persistent_app_item">false</bool>
+
+</resources>

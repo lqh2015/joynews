@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?choose_fragment_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="123123"
+            android:visibility="gone" />
+
+        <android.support.v4.widget.CustomSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipe_refresh_widget"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recylerlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?choose_fragment_bg"
+                android:cacheColorHint="@null"
+                android:scrollbars="vertical" />
+        </android.support.v4.widget.CustomSwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/background_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:src="@drawable/list_item_empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum Berhasil Ditemukan"
+            android:textColor="#bababa"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/update_counts"
+        android:layout_width="match_parent"
+        android:layout_height="24.0dip"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="4.0dip"
+        android:layout_marginTop="4.0dip"
+        android:background="@drawable/notice"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="13.0sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/floating_button"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="left|bottom"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="16dp"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#45000000" />
+    </FrameLayout>
+
+    <!-- 加载Loading-->
+    <include layout="@layout/loading_layout" />
+
+</FrameLayout>

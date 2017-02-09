@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?search_head_layout_bg"
+    android:gravity="left|center_vertical"
+    android:orientation="horizontal">
+
+    <com.hzpd.ui.widget.FontTextView
+        android:id="@+id/key_head_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="@dimen/margin_10"
+        android:text="@string/search_key_head"
+        android:textColor="@color/details_tv_check_color"
+        android:textSize="@dimen/search_key_size" />
+
+</LinearLayout>

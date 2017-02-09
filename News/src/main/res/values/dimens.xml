@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_item_padding">15dp</dimen>
+    <dimen name="list_item_padding_tb">12dp</dimen>
+
+
+    <dimen name="item_height">1.5dp</dimen>
+    <dimen name="main_title_bar">45dp</dimen>
+    <dimen name="details_title_bar">45dp</dimen>
+    <dimen name="image_size">110dp</dimen>
+    <dimen name="space_size">4dp</dimen>
+    <dimen name="folder_cover_size">72dp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <!-- 搜索页面 -->
+    <dimen name="search_key_size">14sp</dimen>
+    <dimen name="search_clear_size">14sp</dimen>
+    <dimen name="search_padding_low">5dp</dimen>
+    <dimen name="search_padding_middle">10dp</dimen>
+    <dimen name="tag">10sp</dimen>
+    <dimen name="main_image_item_layout">90dp</dimen>
+    <dimen name="line_height">0.5dp</dimen>
+    <dimen name="zy_right_margin_left">15dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_top">60dp</dimen>
+    <dimen name="cp_dialog_width">200dp</dimen>
+    <dimen name="cp_dialog_height">300dp</dimen>
+    <dimen name="title_bar_size">18sp</dimen>
+    <dimen name="news_list_padding_left">15.0dip</dimen>
+    <dimen name="news_list_padding_right">15.0dip</dimen>
+    <dimen name="item_title_size">16sp</dimen>
+    <dimen name="item_title_line">2dp</dimen>
+
+</resources>

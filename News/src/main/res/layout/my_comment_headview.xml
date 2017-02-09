@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="?title_bar_color">
+
+        <ImageView
+            android:id="@+id/xf_pinfo_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/background_tab_pressed_selector" />
+
+        <com.hzpd.custorm.CircleImageView
+            android:id="@+id/xf_pinfo_iv_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/xf_pinfo_iv_back"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/news_detail_avatar" />
+
+        <com.hzpd.ui.widget.FontTextView
+            android:id="@+id/xf_pinfo_tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xf_pinfo_iv_avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/prompt_login_now"
+            android:textColor="?my_comment_top_nickname"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/xf_pinfo_ll_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xf_pinfo_tv_nickname"
+            android:layout_marginTop="6dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.hzpd.ui.widget.FontTextView
+                android:id="@+id/xf_pinfo_tv_level_alias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/xf_pinfo_tv_nickname"
+                android:background="@drawable/xf_pinfo_circle_shape"
+                android:text="潜水"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+
+            <com.hzpd.ui.widget.FontTextView
+                android:id="@+id/xf_pinfo_tv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xf_pinfo_tv_nickname"
+                android:layout_marginLeft="6dp"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <com.hzpd.ui.widget.FontTextView
+                android:id="@+id/xf_pinfo_tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <com.daimajia.numberprogressbar.NumberProgressBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/xf_pinfo_npb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xf_pinfo_ll_name"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:padding="4dp"
+            android:visibility="gone"
+            custom:progress_reached_bar_height="4dp"
+            custom:progress_reached_color="#FC0F1D"
+            custom:progress_text_visibility="invisible"
+            custom:progress_unreached_bar_height="3dp"
+            custom:progress_unreached_color="#84060B" />
+
+        <com.hzpd.ui.widget.FontTextView
+            android:id="@+id/xf_pinfo_tv_regtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="?my_comment_top_regtime"
+            android:text=""
+            android:textSize="12sp" />
+
+        <com.hzpd.ui.widget.FontTextView
+            android:id="@+id/xf_pinfo_tv_levelup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

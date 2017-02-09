@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?fragment_main_backgroup"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/stitle_layout" />
+
+        <LinearLayout
+            android:id="@+id/zhuanti_topview_myroot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/zhuanti_header_iv"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@color/grey_item" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/zhuanti_tv_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:text="12313123123"
+                    android:textColor="@color/zqzx_font_normal"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/zhuanti_tv_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="12313123123"
+                    android:textColor="@color/rect"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <include layout="@layout/loading_layout" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recylerlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00ffffff"
+                android:cacheColorHint="@null"
+                android:scrollbars="none" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/background_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="60dp"
+        android:src="@drawable/zqzx_nonetwork"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/update_counts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/toolbar_bg"
+        android:gravity="center"
+        android:padding="5dp"
+        android:visibility="gone" />
+
+</FrameLayout>

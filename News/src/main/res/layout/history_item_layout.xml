@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?search_history_layout_bg"
+    android:gravity="left|center_vertical"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?zqzx_onclik_setting_item"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/search_padding_middle"
+        android:paddingLeft="16dp"
+        android:paddingTop="@dimen/search_padding_middle">
+
+        <com.hzpd.ui.widget.FontTextView
+            android:id="@+id/history_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="@string/search_history_head"
+            android:textColor="?search_key_tv_color"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/search_upbpx_icon" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:background="?discover_item_line_color" />
+</LinearLayout>

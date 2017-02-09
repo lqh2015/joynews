@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="TypographyDashes">
+
+    <!-- Doc link-> https://developers.google.com/analytics/devguides/collection/android/v4/ -->
+
+
+    <!-- 谷歌分析：您的应用在会话结束前可在后台停留的时间（以秒为单位） -->
+    <integer name="ga_sessionTimeout">60</integer>
+    <!-- 谷歌分析：是否启用异常自动跟踪 -->
+    <bool name="ga_autoActivityTracking">true</bool>
+    <!-- 谷歌分析：是否启用异常自动跟踪 -->
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+    <!-- 谷歌分析：跟踪ID -->
+    <string name="ga_trackingId">UA-53576942-7</string>
+    <!-- 谷歌分析：是否开启测试模式 -->
+    <string name="ga_dryRun">false</string>
+    <!-- 谷歌分析：SDK日志记录器的详细程度 -->
+    <string name="ga_logLevel">verbose</string>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <screenName name="com.hzpd.ui.activity.WelcomeActivity">
+        欢迎页
+    </screenName>
+    <screenName name="com.hzpd.ui.activity.FirstPageGuidanceActivity">
+        引导页
+    </screenName>
+    <screenName name="com.hzpd.ui.activity.MainActivity">
+        主页
+    </screenName>
+    <screenName name="com.hzpd.ui.activity.NewsDetailActivity">
+        新闻详情页
+    </screenName>
+    <screenName name="com.hzpd.ui.activity.WebActivity">
+        WebView网页
+    </screenName>
+    <screenName name="com.hzpd.ui.activity.SearchActivity">
+        搜索页
+    </screenName>
+    <screenName name="com.hzpd.ui.activity.MyPMColAvtivity">
+        我的收藏
+    </screenName>
+    <screenName name="com.hzpd.ui.activity.MyCommentsActivity">
+        我的评论
+    </screenName>
+    <screenName name="com.hzpd.ui.activity.ZQ_ReplyActivity">
+        发表评论页
+    </screenName>
+    <screenName name="com.hzpd.ui.activity.NewsAlbumActivity">
+        图集页
+    </screenName>
+    <screenName name="com.hzpd.ui.activity.SearchActivity">
+        搜索页
+    </screenName>
+    <screenName name="com.hzpd.ui.activity.VideoPlayerActivity">
+        视频播放页
+    </screenName>
+    <screenName name="com.facebook.FacebookActivity">
+        Facebook登录页
+    </screenName>
+
+</resources>

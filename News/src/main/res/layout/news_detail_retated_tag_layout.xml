@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?news_item_btn_selector"
+    android:orientation="vertical">
+
+    <View style="@style/news_detail_related_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/classify_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <com.hzpd.ui.widget.FixedImageView
+                android:id="@+id/id_index_gallery_item_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@color/grey_item"
+                android:scaleType="centerCrop" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <com.hzpd.ui.widget.FontTextView
+                    android:id="@+id/id_index_gallery_item_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    android:textColor="?news_detail_item_title"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/id_index_gallery_item_num_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:textColor="#bdbdbd"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_subscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/margin_15"
+            android:background="@drawable/news_detail_retaled_tag_bg"
+            android:drawableLeft="@drawable/news_detail_tag_item_bg"
+            android:drawablePadding="3dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="@string/discovery_follow"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

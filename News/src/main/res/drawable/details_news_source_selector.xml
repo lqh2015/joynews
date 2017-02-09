@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item-->
+    <!--android:state_pressed="true"-->
+    <!--android:drawable="@color/tag_select"/>-->
+    <!--<item-->
+    <!--android:drawable="@color/tag_unselect"/>-->
+
+    <item android:state_pressed="true">
+        <shape>
+            <stroke
+                android:width="0.1dp"
+                android:color="#e0e0e0" />
+            <!-- 点击效果-->
+            <solid android:color="#f5f5f5" />
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <stroke
+                android:width="0.1dp"
+                android:color="#e0e0e0" />
+            <solid android:color="@color/white" />
+            <corners android:radius="20dp" />
+        </shape>
+
+    </item>
+
+
+</selector>
